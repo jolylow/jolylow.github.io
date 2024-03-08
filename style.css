@@ -1,0 +1,260 @@
+body{
+  font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-size: 20px;
+    hyphens: none;
+    font-style: normal;
+    color:rgb(255, 255, 255);
+    background-color: #d1d0d0;
+    }
+
+
+/* Textes */
+
+
+h1{
+  font-family: "abril-display", serif;
+    font-weight: 700;
+    font-style: italic;
+    margin: 30px;
+    font-size: 25px;
+    color: white;
+    }
+
+
+h2{
+  font-family:"Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 50px;
+    font-size: 60px;
+    color: black;
+    }
+
+
+h3{
+  font-family: "degular", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 25px;
+  color: blue;
+  animation-duration: 10s;
+  animation-name: glissement;
+  animation-iteration-count:infinite;
+}
+
+
+   /* Animation "dnmade graphisme..." */
+   @keyframes glissement {
+    from {
+      margin-left: 70%;
+      width: 100%;
+    }
+  
+    to {
+      margin-left: 3%;
+      width: 100%;
+    }
+  }
+
+  h4{
+   font-family: "normalidad-compact", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      margin: 50px;
+      font-size: 60px;
+      color: black;
+      }
+
+    
+
+  p {
+    font-family:'Aktiv grotesk';
+    font-weight: 200;
+    font-style: normal;
+    font-size: 16px;
+    color: black;
+  }
+
+
+
+/* Fond  */
+
+.slider{
+    width: 100%;
+    min-height: 50vh;
+    aspect-ratio: auto;
+    background: rgb(0, 0, 0);
+    }
+
+.slider-background{
+    width: 100%;
+    height:65%;
+    object-fit: cover;
+    }
+  
+
+
+/* Bandeau */
+
+.bandeau{
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    gap: 4px;
+    display: grid;
+    align-items:baseline ;
+    border-bottom: 1px solid  #c8a969;
+    top: 0px;
+    padding: 10px;
+    background-color: black;
+    justify-content: space-between;
+    }
+ 
+.bandeau a{
+    display: block;
+    min-width: 200px;
+    transition: 1s;
+    font-size: 30px;
+    margin: 0.; 
+    padding: 0.4rem O;
+    text-align: center;
+    background-color: black;
+    color:  #c8a969;;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: all 1s ;       
+    }
+
+.bandeau a:hover{
+    background-color: black;
+    color:white;
+    border-color: #ffffff;
+    }
+
+
+
+/* Présentation projets accueil */
+
+.projects {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    display: grid;
+    position: relative;
+    align-items:baseline ;
+    padding: 10px; 
+    transition: 1s;
+    margin:10px ;
+    }
+
+.projects{
+    max-width: 100%;
+    display: block;
+    transition: 5s; 
+    }
+
+.projects a:hover img{
+    transform:scale(0.9);
+    filter:opacity(60%);
+    }
+
+.projects img{
+    margin: 30px;
+    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
+    }
+
+
+
+/* Pages projets */
+
+.titre{
+    margin-bottom: 30px;
+    border-bottom: 2px solid #0033ff;
+    max-width: 800px;
+    }
+
+p.contenu{
+   font-size: 15px;
+   font-weight: 400;
+   max-width: 600px;
+   margin-bottom: 30px;
+   padding-left: 50px;
+   }
+
+   /* Grid photo */
+   
+.grid-photo{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-rows:auto; */
+  gap: 60px;
+  justify-items: center;
+  align-items:center;
+  padding: 50px;
+  margin-bottom:200px;
+  max-width: 2000px;
+  }
+
+  .grid-photo img {
+    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
+  }
+
+
+.grid-glyphs{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 60px;
+  justify-items: center;
+  align-items:center;
+  padding: 50px;
+  margin-bottom:200px;
+  max-width: 2000px;
+  }
+
+  .grid-herbier{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 60px;
+    justify-items: center;
+    align-items:center;
+    padding: 50px;
+    margin-bottom:200px;
+    max-width: 2000px;
+    }
+
+    .grid-beatmakers{
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 60px;
+      justify-items: center;
+      align-items:center;
+      padding: 50px;
+      margin-bottom:200px;
+      max-width: 2000px;
+      
+    }
+        
+      
+
+
+    .grid-about{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      justify-items: center;
+      align-items:center;
+      padding: 50px;
+      margin-bottom:200px;
+      max-width: 2000px;
+      }
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
