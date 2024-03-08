@@ -179,15 +179,12 @@ p.contenu{
    padding-left: 50px;
    }
 
-  
-
-   
-
    /* Grid photo */
    
 .grid-photo{
   display: grid;
-  grid-template-columns: 1fr ;
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-rows:auto; */
   gap: 60px;
   justify-items: center;
   align-items:center;
@@ -200,8 +197,8 @@ p.contenu{
     box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
   }
   @media (min-width: 640px){
-    .grid-photo{
-      grid-template-columns: 1fr 1fr;
+    .grid-about{
+      grid-template-columns: 1fr;
     }
   }
 
