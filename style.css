@@ -131,7 +131,7 @@ h3{
 /* Bandeau */
 
 .bandeau{
-    grid-template-columns: 3fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 4px;
     display: grid;
     align-items:baseline ;
@@ -163,15 +163,11 @@ h3{
     border-color: #ffffff;
     }
 
-    @media (min-width: 640px){
-      .bandeau{
-        font-size : 100px
-      }
-    }
+   
 
     @media (min-width: 640px){
       .bandeau{
-        grid-template-columns: 1px;
+        grid-template-columns: 3fr 1fr 1fr 1fr;
       }
     }
 
