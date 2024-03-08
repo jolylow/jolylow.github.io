@@ -8,6 +8,12 @@ body{
     background-color: #d1d0d0;
     }
 
+    @media (min-width: 640px){
+      .body{
+        font-size : 100px
+      }
+    }
+
 
 /* Textes */
 
@@ -21,6 +27,12 @@ h1{
     color: white;
     }
 
+    @media (min-width: 640px){
+      h1{
+        font-size : 100px
+      }
+    }
+
 
 h2{
   font-family:"Abril Fatface", serif;
@@ -31,6 +43,11 @@ h2{
     color: black;
     }
 
+    @media (min-width: 640px){
+      h2{
+        font-size : 100px
+      }
+    }
 
 h3{
   font-family: "degular", sans-serif;
@@ -41,6 +58,12 @@ h3{
   animation-duration: 10s;
   animation-name: glissement;
   animation-iteration-count:infinite;
+}
+
+@media (min-width: 640px){
+  h3{
+    font-size : 100px
+  }
 }
 
 
@@ -66,6 +89,11 @@ h3{
       color: black;
       }
 
+      @media (min-width: 640px){
+        h4{
+          font-size : 100px
+        }
+      }
     
 
   p {
@@ -76,6 +104,11 @@ h3{
     color: black;
   }
 
+  @media (min-width: 640px){
+    p{
+      font-size : 100px
+    }
+  }
 
 
 /* Fond  */
@@ -130,6 +163,18 @@ h3{
     border-color: #ffffff;
     }
 
+    @media (min-width: 640px){
+      .bandeau{
+        font-size : 100px
+      }
+    }
+
+    @media (min-width: 640px){
+      .bandeau{
+        grid-template-columns: 1px;
+      }
+    }
+
 
 
 /* Présentation projets accueil */
@@ -161,6 +206,12 @@ h3{
     box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
     }
 
+    @media (min-width: 640px){
+      .projects{
+        font-size : 100px
+      }
+    }
+
 
 
 /* Pages projets */
@@ -171,6 +222,12 @@ h3{
     max-width: 800px;
     }
 
+    @media (min-width: 640px){
+      .titre{
+        font-size : 100px
+      }
+    }
+
 p.contenu{
    font-size: 15px;
    font-weight: 400;
@@ -179,12 +236,17 @@ p.contenu{
    padding-left: 50px;
    }
 
+   @media (min-width: 640px){
+    p.contenu{
+      font-size : 100px
+    }
+  }
+
    /* Grid photo */
    
 .grid-photo{
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* grid-template-rows:auto; */
+  grid-template-columns: 1fr ;
   gap: 60px;
   justify-items: center;
   align-items:center;
@@ -195,6 +257,11 @@ p.contenu{
 
 .grid-photo img {
     box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
+  }
+  @media (min-width: 640px){
+    .grid-photo{
+      grid-template-columns: 1fr 1fr;
+    }
   }
 
 
@@ -209,6 +276,12 @@ p.contenu{
   max-width: 2000px;
   }
 
+  @media (min-width: 640px){
+    .grid-glyphs{
+      grid-template-columns: 1fr;
+    }
+  }
+
   .grid-herbier{
     display: grid;
     grid-template-columns: 1fr;
@@ -218,6 +291,12 @@ p.contenu{
     padding: 50px;
     margin-bottom:200px;
     max-width: 2000px;
+    }
+
+    @media (min-width: 640px){
+      .grid-about{
+        grid-template-columns: 1fr;
+      }
     }
 
     .grid-beatmakers{
@@ -231,11 +310,16 @@ p.contenu{
       max-width: 2000px;
       
     }
+    @media (min-width: 640px){
+      .grid-beatmakers{
+        grid-template-columns: 1fr;
+      }
+    }
         
 
     .grid-about{
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr ;
       gap:0px;
       justify-items: left;
       align-items:baseline;
@@ -243,16 +327,25 @@ p.contenu{
       margin-bottom:200px;
       max-width: 1000px;
       margin-right:100px;
+    }
+
+      @media (min-width: 640px){
+        .grid-about{
+          grid-template-columns: 1fr 1fr;
+        }
       }
+
+
+    
 
       .grid-about img {
         box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
-      }
+        display: grid;
+       }
 
-     img{
-      max-width: 100%;
-      height: fit-content;
-     }
+     
+
+
   
 
   
