@@ -257,16 +257,8 @@ p.contenu{
         display: block;
        }
 
-     
 
-@media (min-width: 640px){
-  .projects{
-    grid-template-columns: 1fr 1fr;
-    }
-    }
-  
-
-@media (min-width:1000px){
+@media (min-width:640px){
   .projects{
     grid-template-columns: 1fr 1fr 1fr;
     }
