@@ -191,7 +191,14 @@ p.contenu{
   padding: 50px;
   margin-bottom:200px;
   max-width: 2000px;
+}
+
+  @media (min-width: 640px) {
+    .grid-photo {
+      margin: 1fr;
+    }
   }
+
 
   .grid-photo img {
     box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
@@ -232,8 +239,6 @@ p.contenu{
       
     }
         
-      
-
 
     .grid-about{
       display: grid;
@@ -245,6 +250,8 @@ p.contenu{
       margin-bottom:200px;
       max-width: 2000px;
       }
+
+     
   
 
   
