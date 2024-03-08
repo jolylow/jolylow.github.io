@@ -193,14 +193,7 @@ p.contenu{
   max-width: 2000px;
 }
 
-  @media (min-width: 640px) {
-    .grid-photo {
-      margin: 1fr;
-    }
-  }
-
-
-  .grid-photo img {
+.grid-photo img {
     box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
   }
 
@@ -243,12 +236,17 @@ p.contenu{
     .grid-about{
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 60px;
-      justify-items: center;
-      align-items:center;
-      padding: 50px;
+      gap:0px;
+      justify-items: left;
+      align-items:baseline;
+      padding: 0px;
       margin-bottom:200px;
-      max-width: 2000px;
+      max-width: 1000px;
+      margin-right:100px;
+      }
+
+      .grid-about img {
+        box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
       }
 
      
