@@ -97,7 +97,7 @@ p{
 /* Bandeau */
 
 .bandeau{
-    grid-template-columns: 3fr 1fr 1fr 1fr;
+    grid-template-columns:1fr;
     gap: 4px;
     display: grid;
     align-items:baseline ;
@@ -282,6 +282,10 @@ p.contenu{
   .grid-about{
     grid-template-columns: 1fr 1fr;
     }
+
+  .bandeau{
+    grid-template-columns:3fr 1fr 1fr 1fr;
+  }  
     }
 
   @media (min-width:640px){
