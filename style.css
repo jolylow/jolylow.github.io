@@ -101,10 +101,10 @@ p{
     gap: 4px;
     display: grid;
     align-items:baseline ;
-    border-bottom: 1px solid pink;
+    border-bottom: 1px solid  #c8a969;
     top: 0px;
     padding: 10px;
-    background-color: pink;
+    background-color: black;
     justify-content: space-between;
     }
  
@@ -322,7 +322,7 @@ p.contenu{
   p {
     font-size: 50px;
     }
-
+   
 
   }
 
