@@ -1,25 +1,84 @@
 body{
-  font-family: "DM Serif Display", serif;
-    font-weight: 400;
-    font-size: 20px;
-    hyphens: none;
-    font-style: normal;
-    color:rgb(255, 255, 255);
     background-color: #d1d0d0;
     }
+
+
+/* Bandeau */
+
+.bandeau{
+  grid-template-columns:1fr;
+  gap: 20px;
+  display: grid;
+  border-radius: 30px;
+  align-items:baseline;
+  top: 0px;
+  padding: 10px 20px 10px 10px;
+  background-color: white;
+  justify-content: space-between;
+
+/* Bandeau texte*/
+  h1{
+    font-family: "indivisible", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      margin left: 60px;
+      font-size: 15px;
+      color: black;
+      }
+  }
+
+.bandeau a{
+  display: block;
+  min-width: 200px;
+  transition: 1s;
+  font-size: 20px;
+  margin: 0.; 
+  padding: 0.4rem O;
+  text-align: center;
+  background-color: black;
+  color:  #c8a969;;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: all 1s ;       
+  }
+
+.bandeau a:hover{
+  background-color: black;
+  color:white;
+  border-color: #ffffff;
+  }
+
+
+
+
+
+
 
 
 /* Textes */
 
 
 h1{
-  font-family: "abril-display", serif;
+  font-family: "indivisible", sans-serif;
     font-weight: 700;
-    font-style: italic;
-    margin: 30px;
-    font-size: 40px;
-    color: white;
+    font-style: normal;
+    margin: 10px;
+    font-size: 10px;
+    color: blue;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 h2{
@@ -94,40 +153,7 @@ p{
   
 
 
-/* Bandeau */
 
-.bandeau{
-    grid-template-columns:1fr;
-    gap: 4px;
-    display: grid;
-    align-items:baseline ;
-    border-bottom: 1px solid  #c8a969;
-    top: 0px;
-    padding: 10px;
-    background-color: black;
-    justify-content: space-between;
-    }
- 
-.bandeau a{
-    display: block;
-    min-width: 200px;
-    transition: 1s;
-    font-size: 30px;
-    margin: 0.; 
-    padding: 0.4rem O;
-    text-align: center;
-    background-color: black;
-    color:  #c8a969;;
-    text-decoration: none;
-    border-radius: 2px;
-    transition: all 1s ;       
-    }
-
-.bandeau a:hover{
-    background-color: black;
-    color:white;
-    border-color: #ffffff;
-    }
 
 
 
@@ -322,7 +348,7 @@ p.contenu{
   p {
     font-size: 50px;
     }
-   
+
 
   }
 
