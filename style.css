@@ -1,33 +1,63 @@
 body{
-    background-color: #d1d0d0;
+    background-color: #f2f0eb;
     }
-
+*{
+  margin:0;
+  padding:0;
+}
 
 /* Bandeau */
 
 .bandeau{
-  grid-template-columns:1fr;
-  gap: 20px;
-  display: grid;
-  border-radius: 30px;
-  align-items:baseline;
-  top: 0px;
-  padding: 10px 20px 10px 10px;
-  background-color: white;
-  justify-content: space-between;
+position:relative;
+width: 100%;
+height: 100%;
+background: white;
 
 /* Bandeau texte*/
   h1{
-    font-family: "indivisible", sans-serif;
-      font-weight: 400;
+    font-family: "owners", sans-serif;
+      font-weight: 500;
       font-style: normal;
-      margin left: 60px;
+      margin-left: 40px;
+      font-size: 20px;
+      color: black;
+    }
+  h2{
+    font-family: "owners", sans-serif;
+      font-weight: 400;
+      font-style: italic;
+      margin: 0px;
       font-size: 15px;
       color: black;
-      }
+    }
+   }
+  nav{
+    display:flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center; 
+    justify-content: space-between;
   }
 
-.bandeau a{
+  nav ul li{
+    display: inline-block;
+    list-style:none;
+    margin: 10px 20px;
+  }
+
+  nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+
+  nav ul li a:hover{
+    color:red;
+  }
+
+.bandeau b{
   display: block;
   min-width: 200px;
   transition: 1s;
@@ -42,7 +72,7 @@ body{
   transition: all 1s ;       
   }
 
-.bandeau a:hover{
+.bandeau b:hover{
   background-color: black;
   color:white;
   border-color: #ffffff;
@@ -58,14 +88,6 @@ body{
 /* Textes */
 
 
-h1{
-  font-family: "indivisible", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    margin: 10px;
-    font-size: 10px;
-    color: blue;
-    }
 
 
 
@@ -81,14 +103,7 @@ h1{
 
 
 
-h2{
-  font-family:"Abril Fatface", serif;
-    font-weight: 400;
-    font-style: normal;
-    margin: 50px;
-    font-size: 60px;
-    color: black;
-    }
+
 
 
 h3{
