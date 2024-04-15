@@ -101,7 +101,7 @@ p{
     gap: 4px;
     display: grid;
     align-items:baseline ;
-    border-bottom: 1px solid  #c8a969;
+    border-bottom: 1px solid pink;
     top: 0px;
     padding: 10px;
     background-color: black;
@@ -250,6 +250,21 @@ p.contenu{
     box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
     display: grid;
     }
+
+.grid-fanzine{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:0px;
+    justify-items: left;
+    align-items:baseline;
+    padding: 0px;
+     margin-bottom:200px;
+    max-width: 1000px;
+    margin-right:100px;
+    }
+
+
+
 
   img{
     max-width: 100%;
