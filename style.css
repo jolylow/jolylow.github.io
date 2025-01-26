@@ -34,7 +34,6 @@ section.haut-page {
   width: 300px;            /* Largeur fixe, ajustable */
   text-decoration: none;
   padding: 20px;
-  box-sizing: border-box;
   @media (max-width: 768px) {
     .nav {
       width: 200px;  /* Réduit la largeur du menu sur les petits écrans */
