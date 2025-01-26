@@ -26,18 +26,17 @@ section.haut-page {
 
 /* menu de naviguation */
 .nav {
-  position: fixed;                /* Fixe le menu par rapport à l'écran */
-  top: 50%;                        /* Positionne le menu verticalement au centre */
-  right: 20px;                     /* Le menu est espacé de 20px du bord droit */
-  display: flex;                   /* Flexbox pour l'alignement des éléments */
-  flex-direction: column;          /* Pour aligner les éléments du menu verticalement */
-  justify-content: flex-start;     /* Aligne les éléments en haut du menu */
-  list-style: none;                /* Retire les puces de la liste */
-  width: 100px;                    /* Largeur fixe du menu */
-  text-decoration: none;           /* Enlever le soulignement des liens */
-  padding: 10px;                   /* Espacement interne */
-  box-sizing: border-box;          /* Inclut les paddings dans la largeur totale */
-  background-color: #333;          /* Couleur de fond du menu */
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: space-between;  /* Espace égal entre les éléments du menu */
+  list-style: none;
+  width: 200px;
+  text-decoration: none;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #333;
 }
 
 .nav li a{
