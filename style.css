@@ -25,7 +25,7 @@ section.haut-page {
 }
 
 /* menu de naviguation */
-.nav{
+.nav.header{
   display:flex;
   justify-content: space-between;
   list-style: none;
