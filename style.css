@@ -15,27 +15,24 @@ header.header {
 
 /* bandeau */
 section.haut-page {
-   /* couleur fond */
-   background-color:#f6f0f3;
-   /* l'image couvre tout l'espace */
-   background-size:cover;
-   /* hauteur dans la page */
-   height:40vh;
+   background-color:#f6f0f3;   /* couleur fond */
+   background-size:cover;   /* l'image couvre tout l'espace */
+   height:40vh;   /* hauteur dans la page */
    /* A VOIR padding:50px 100px; */
 }
 
 /* menu de naviguation */
 .nav {
-  position: fixed;
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  width: 100px;            /* Largeur fixe, ajustable */
-  text-decoration: none;
-  padding: 20px;
+   position: fixed;
+   display: flex;
+   justify-content: space-between;
+   list-style: none;
+   width: 100px;   /* Largeur fixe, ajustable */
+   text-decoration: none;
+   padding:40px;
   @media (max-width: 768px) {
     .nav {
-      width: 200px;  /* Réduit la largeur du menu sur les petits écrans */
+      width: 200px;   /* Réduit la largeur du menu sur les petits écrans */
     }
   }
   
