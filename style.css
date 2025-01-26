@@ -2,24 +2,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&display=swap");
 
 
-
 body{
-  margin:0 auto;
-  background-color:#f6f3f0;
+   margin:0 auto;
+   background-color:#f6f3f0;
 }
 
 header.header {
-  display: flex;
-  align-items: center;
+   display: flex;
+   align-items: center;
 }
 
 
 /* bandeau */
 section.top-page {
   background-color:#f6f3f0;
-  background-size: cover;
-  height: 80vh;
-  padding: 50px 100px ;
+  background-size:cover;
+  height:60vh;
+  padding:50px 100px ;
 }
 
 /* menu de naviguation  */
