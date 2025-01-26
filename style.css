@@ -25,11 +25,11 @@ section.haut-page {
 }
 
 /* menu de naviguation */
-.nav.header{
+.nav {
   display:flex;
   justify-content: space-between;
   list-style: none;
-  width: 100px;
+  width: 500px;
   margin-left: 700px;
   text-decoration: none;
   
