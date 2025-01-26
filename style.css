@@ -32,7 +32,7 @@ section.haut-page {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  width: 300px;            /* Largeur fixe, ajustable */
+  width: 100px;            /* Largeur fixe, ajustable */
   text-decoration: none;
   padding: 20px;
   box-sizing: border-box;
