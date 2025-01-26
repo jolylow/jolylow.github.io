@@ -15,9 +15,9 @@ header.header {
 
 /* bandeau */
 .top-page {
-  background-color:#f6f0f3;
+  background-color:#f6f3f0;
   background-size:cover;
-  height:20vh;
+  height:80vh;
   padding:50px 100px ;
 }
 
