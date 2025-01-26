@@ -14,8 +14,8 @@ header.header {
 
 
 /* bandeau */
-.top-page {
-  background-color:#f6f3f0;
+.haut-page {
+  background-color:hsl(310, 50%, 30%);
   background-size:cover;
   height:80vh;
   padding:50px 100px ;
