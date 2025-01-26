@@ -15,22 +15,21 @@ header.header {
 
 /* bandeau */
 section.haut-page {
-  /* couleur fond */
-  background-color:#f6f0f3;
-  /* l'image couvre tout l'espace */
-  background-size:cover;
-  /* hauteur dans la page */
-  height:40vh;
-  /* padding:50px 100px; */
+   /* couleur fond */
+   background-color:#f6f0f3;
+   /* l'image couvre tout l'espace */
+   background-size:cover;
+   /* hauteur dans la page */
+   height:40vh;
+   /* A VOIR padding:50px 100px; */
 }
 
-/* menu de naviguation  */
-
+/* menu de naviguation */
 .nav{
-  display: flex;
+  display:flex;
   justify-content: space-between;
   list-style: none;
-  width: 300px;
+  width: 100px;
   margin-left: 700px;
   text-decoration: none;
   
