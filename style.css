@@ -30,7 +30,7 @@ section.haut-page {
   top: 10px;
   right: 20px;
   display: flex;
-  justify-content: space-between;  /* Espace égal entre les éléments du menu */
+  justify-content: space-around;  /* Espacement égal autour de chaque élément */
   list-style: none;
   width: 300px;
   text-decoration: none;
