@@ -28,7 +28,7 @@ section.haut-page {
 .nav {
   position: fixed;
   top: 50%;                /* Positionne le menu au centre vertical de l'écran */
-  right: 0;                /* Le menu est collé au bord droit */
+  right: 100;                /* Le menu est collé au bord droit */
   display: flex;
   justify-content: space-between;
   list-style: none;
