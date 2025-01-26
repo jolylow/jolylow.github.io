@@ -27,14 +27,12 @@ section.haut-page {
 /* menu de naviguation */
 .nav {
   position: fixed;
-  top: 50%;                /* Positionne le menu au centre vertical de l'écran */
   right: 100;                /* Le menu est collé au bord droit */
   display: flex;
   justify-content: space-between;
   list-style: none;
   width: 300px;            /* Largeur fixe, ajustable */
   text-decoration: none;
-  background-color: #333;
   padding: 20px;
   box-sizing: border-box;
   @media (max-width: 768px) {
