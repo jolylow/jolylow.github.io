@@ -27,7 +27,7 @@ section.haut-page {
 /* menu de naviguation */
 .nav {
   position: fixed;
-  right: 10;                /* Le menu est collé au bord droit */
+  right: 10px;                /* Le menu est collé au bord droit */
   display: flex;
   justify-content: space-between;
   list-style: none;
