@@ -29,7 +29,7 @@ section.haut-page {
    list-style: none;
    width: 100px;   /* Largeur fixe, ajustable */
    text-decoration: none;
-   padding:40px;
+   padding:20px;
   @media (max-width: 768px) {
     .nav {
       width: 200px;   /* Réduit la largeur du menu sur les petits écrans */
