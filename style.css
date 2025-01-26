@@ -35,7 +35,6 @@ section.haut-page {
   width: 200px;
   text-decoration: none;
   padding: 10px;
-  box-sizing: border-box;
 }
 
 .nav li a{
