@@ -32,9 +32,9 @@ section.haut-page {
   display: flex;
   justify-content: space-between;  /* Espace égal entre les éléments du menu */
   list-style: none;
-  width: 200px;
+  width: 300px;
   text-decoration: none;
-  padding: 10px;
+  padding: 20px;
 }
 
 .nav li a{
