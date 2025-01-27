@@ -26,12 +26,14 @@ header.header img {
   list-style: none;
   margin: 0;
   padding: 0;
-  left: 20px;
+  position: absolute; /* Fixe le menu par rapport à la page */
+  top: 20px; /* Espace du menu par rapport au haut */
+  right: 20px; /* Positionne le menu du côté droit de la page */
 }
 
 /* Espacement entre les liens du menu */
 .nav li {
-  margin-left: 20px;
+  margin-left: 20px; /* Espacement entre les éléments du menu */
 }
 
 /* Liens de navigation */
@@ -41,6 +43,11 @@ header.header img {
   font-size: 20px;
   text-decoration: none;
   transition: color 0.3s ease;
+}
+
+/* Effet au survol des liens */
+.nav li a:hover {
+  color: #b8813c;
 }
 
 /* Effet au survol des liens */
