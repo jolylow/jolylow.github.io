@@ -13,11 +13,19 @@ header.header {
 }
 
 
-/* bandeau */
 section.haut-page {
-  background-image: url(images/fond.png);
-   height: 40vh;   /* hauteur dans la page */
-   /* A VOIR padding:50px 100px; */
+  background-image: url('images/fond.png'); /* Chemin vers l'image */
+  background-size: cover; /* L'image couvre toute la section */
+  background-position: center; /* Centrage de l'image */
+  background-repeat: no-repeat; /* Pas de répétition de l'image */
+  height: 100vh; /* Hauteur de la section égale à la hauteur de l'écran */
+  width: 100%; /* La section prend toute la largeur de l'écran */
+  color: white; /* Texte en blanc pour bien ressortir sur l'image */
+  text-align: center; /* Centre le texte horizontalement */
+  display: flex; /* Utilisation de Flexbox pour centrer le contenu */
+  flex-direction: column; /* Le contenu est empilé verticalement */
+  justify-content: center; /* Centre le contenu verticalement */
+  padding: 0 20px; /* Un peu de padding pour espacer le texte des bords */
 }
 
 /* menu de naviguation */
