@@ -21,6 +21,11 @@ section.haut-page {
    /* A VOIR padding:50px 100px; */
 }
 
+.haut-page img{
+  margin: 30px;
+  box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
+  }
+
 /* menu de naviguation */
 .nav {
    position: fixed;
