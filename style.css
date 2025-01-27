@@ -15,16 +15,11 @@ header.header {
 
 /* bandeau */
 section.haut-page {
-   background-image:"fond.png";   /* couleur fond */
-   background-size: cover;   /* l'image couvre tout l'espace */    
+   background-image: url("fond.png");
    height: 40vh;   /* hauteur dans la page */
    /* A VOIR padding:50px 100px; */
 }
 
-.haut-page img{
-  margin: 30px;
-  box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
-  }
 
 /* menu de naviguation */
 .nav {
