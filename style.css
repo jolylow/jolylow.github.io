@@ -15,7 +15,7 @@ header.header {
 
 /* bandeau */
 section.haut-page {
-   background-image: url("fond.png");
+   background-image:("fond.png");
    height: 40vh;   /* hauteur dans la page */
    /* A VOIR padding:50px 100px; */
 }
