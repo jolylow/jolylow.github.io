@@ -15,8 +15,6 @@ header.header {
 
 /* bandeau */
 section.haut-page {
-   position: center;
-   padding: 15px 20px;
    background-color:#f6f3f0;   /* couleur fond */
    background-size: cover;   /* l'image couvre tout l'espace */    
    height: 40vh;   /* hauteur dans la page */
