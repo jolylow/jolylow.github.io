@@ -24,8 +24,7 @@ header.header img {
 .nav ul {
   display: flex;
   list-style: none;
-  margin-right: 20px;
-  padding-right: 70px;
+  padding-right: 20px;
   position: absolute; /* Fixe le menu par rapport à la page */
   top: 40px; /* Espacement du menu par rapport au haut */
 }
