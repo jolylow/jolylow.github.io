@@ -74,11 +74,15 @@ section.haut-page {
 }
 
 
-video{
-  position: center;
-  padding: 15px 20px;
+video {
+  position: fixed; /* Fixe la vidéo en haut de la page */
+  top: 10px; /* Positionne la vidéo à 10px du haut */
+  left: 10px; /* Positionne la vidéo à 10px de la gauche */
+  width: 120px; /* Taille de la vidéo (ajustable selon ton besoin) */
+  height: 90px; /* Hauteur de la vidéo (ajustable selon ton besoin) */
+  padding: 15px 20px; /* Ajoute un peu d'espace autour de la vidéo */
+  z-index: 10; /* Pour s'assurer que la vidéo reste au-dessus du contenu */
 }
-
 
 
 /* h4{
