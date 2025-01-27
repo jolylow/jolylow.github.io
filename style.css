@@ -30,8 +30,8 @@ section.haut-page {
    justify-content: space-around;   /* Espacement égal autour de chaque élément */
    list-style: none;
    width: 300px;
-  text-decoration: none;
-  padding: 20px;
+   text-decoration: none;
+   padding: 20px;
 }
 
 .nav li a{
@@ -49,10 +49,9 @@ section.haut-page {
 /* Titre portfolio  */
 .big-title{
   color: black;
-  font-size: 100px;
+  font-size: 400px;
   padding: 70px 20px;
   font-family: "Playfair Display";
-  ;
 }
 
 
