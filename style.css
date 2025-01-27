@@ -7,13 +7,14 @@ header.header {
   align-items: center; /* Centrer verticalement les éléments */
   padding: 20px; /* Espacement autour du header */
   position: relative; /* Pour s'assurer que le logo et le menu flottent au-dessus du fond */
-  z-index: 10; /* Le menu et le logo seront au-dessus de la vidéo */
 }
 
+/* taille du logo */
 header.header img {
-  max-width: 150px; /* Limite la taille du logo */
+  max-width: 150px; 
 }
 
+/* naviguateur */
 .nav ul {
   display: flex;
   list-style: none;
@@ -21,10 +22,12 @@ header.header img {
   padding: 0;
 }
 
+/* naviguateur liens position */
 .nav li {
   margin-left: 20px;
 }
 
+/* naviguateur liens */
 .nav li a {
   color: black;
   font-family: "Playfair Display", serif;
@@ -33,24 +36,26 @@ header.header img {
   transition: color 0.3s ease;
 }
 
+/* naviguateur liens sous */
 .nav li a:hover {
   color: #b8813c;
 }
 
-/* Bandeau avec vidéo et titre */
+/* bandeau */
 section.haut-page {
   position: relative;
   background-color: #f6f3f0; /* Couleur de fond de la section */
   height: 100vh; /* La section prend toute la hauteur de la fenêtre */
-  overflow: hidden; /* Empêche la vidéo de dépasser */
 }
 
+/* titre portfolio position*/
 .big-title {
   position: absolute;
   transform: translate(-50%, -50%); /* Centrer précisément le titre */
   text-align: center;
 }
 
+/* titre portfolio */
 .big-title h1 {
   color: black;
   font-size: 500px; /* Taille du titre (ajuste en fonction du besoin) */
@@ -60,28 +65,33 @@ section.haut-page {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre portée pour améliorer la lisibilité */
 }
 
-/* Responsivité pour les petits écrans */
-@media (max-width: 768px) {
-  .big-title h1 {
-    font-size: 80px; /* Réduit la taille du titre sur les tablettes */
-  }
+.gridmain{
+  display:grid;
+  /* grid-template-columns: 1fr 1fr; */
+  justify-items: stretch;
+  align-items: center;
+  gap: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  grid-column: 1/-1;
+  /* justify-self: stretch; */
 }
 
-@media (max-width: 480px) {
-  .big-title h1 {
-    font-size: 40px; /* Encore plus petit sur les écrans très petits */
-  }
-}
+.gridmain a{
+  color: black;
+  text-decoration: none;  
+  font-family: "indivisible", sans-serif;
+  font-weight: 800;
+  font-style: normal;  
+  font-size: 20px;                                                             
+  padding: 10px;
+  border-bottom: 1px solid black;
+  transition: 0.1s;
+  
+}  
 
-
-video {
-  position: fixed; /* Fixe la vidéo en haut de la page */
-  top: 10px; /* Positionne la vidéo à 10px du haut */
-  left: 10px; /* Positionne la vidéo à 10px de la gauche */
-  width: 120px; /* Taille de la vidéo (ajustable selon ton besoin) */
-  height: 90px; /* Hauteur de la vidéo (ajustable selon ton besoin) */
-  padding: 15px 20px; /* Ajoute un peu d'espace autour de la vidéo */
-  z-index: 10; /* Pour s'assurer que la vidéo reste au-dessus du contenu */
+.gridmain a:hover{
+  color: rgb(167, 167, 167);
 }
 
 
@@ -320,7 +330,18 @@ p.contenu{
   } 
 
 
+/* Responsivité pour les petits écrans */
+@media (max-width: 768px) {
+  .big-title h1 {
+    font-size: 80px; /* Réduit la taille du titre sur les tablettes */
+  }
+}
 
+@media (max-width: 480px) {
+  .big-title h1 {
+    font-size: 40px; /* Encore plus petit sur les écrans très petits */
+  }
+}
 
    
 
