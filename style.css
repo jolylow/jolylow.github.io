@@ -82,7 +82,7 @@ section.haut-page video {
 
 @media (max-width: 480px) {
   .big-title h1 {
-    font-size: 60px; /* Encore plus petit sur les écrans très petits */
+    font-size: 40px; /* Encore plus petit sur les écrans très petits */
   }
 }
 
