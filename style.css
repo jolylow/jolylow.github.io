@@ -10,6 +10,7 @@ header.header {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1000; /* Assurer que le header reste au-dessus du contenu */
   background-color: #f6f3f0; /* Couleur de fond pour le header */
   width: 100%; /* Faire en sorte que le header prenne toute la largeur */
 }
@@ -27,7 +28,7 @@ header.header img {
   padding: 0;
   position: absolute; /* Fixe le menu par rapport à la page */
   top: 20px; /* Espacement du menu par rapport au haut */
-  right: 40%; /* Ajuste légèrement la position du menu vers la gauche */
+  right: 60%; /* Ajuste légèrement la position du menu vers la gauche */
 }
 
 /* Espacement entre les liens du menu */
