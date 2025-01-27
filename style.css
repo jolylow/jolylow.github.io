@@ -27,6 +27,12 @@ section.haut-page {
   flex-direction: column; /* Le contenu est empilé verticalement */
   justify-content: center; /* Centre le contenu verticalement */
   padding: 0 20px; /* Un peu de padding pour espacer le texte des bords */
+  background-color: #f6f3f0; /* Ajout d'une couleur de fond au cas où l'image ne se charge pas */
+}
+
+/* Ajoute une bordure ou une couleur pour tester visuellement si la section existe */
+section.haut-page {
+  border: 2px solid red; /* Ceci est temporaire pour tester */
 }
 
 
