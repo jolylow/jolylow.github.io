@@ -13,9 +13,10 @@ header.header {
 }
 
 
+/* bandeau */
 section.haut-page {
   background-image: url('images/fond.png'); /* Chemin vers l'image */
-  background-size: cover; /* L'image couvre toute la section */
+  background-size: contain; /* L'image est redimensionnée pour être entièrement visible */
   background-position: center; /* Centrage de l'image */
   background-repeat: no-repeat; /* Pas de répétition de l'image */
   height: 100vh; /* Hauteur de la section égale à la hauteur de l'écran */
