@@ -51,7 +51,8 @@ section.haut-page {
   color: black;
   font-size: 120px; /* Taille du titre, que tu peux ajuster */
   padding: 0 20px; /* Espacement autour du titre à gauche et à droite */
-  margin-top: 100px; /* Espacement supplémentaire en haut du titre */
+  margin-top: 10px; /* Espacement supplémentaire en haut du titre */
+  margin-bottom: 100px;
   font-family: "Playfair Display", serif; /* Police choisie */
   text-align: center; /* Centre le texte horizontalement */
   margin-bottom: 0; /* Annule les marges par défaut du titre */
