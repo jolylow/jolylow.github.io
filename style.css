@@ -54,7 +54,7 @@ section.haut-page {
   display: flex;
   justify-content: center; /* Centre horizontalement */
   align-items: flex-start; /* Aligne les éléments du haut vers le haut */
-  padding-top: 160px; /* Espacement pour éviter que le titre soit sous le logo */
+  padding-top: 100px; /* Espacement pour éviter que le titre soit sous le logo */
 }
 
 /* Titre Portfolio centré */
@@ -68,8 +68,8 @@ section.haut-page {
 
 /* Taille et style du titre Portfolio */
 .big-title h1 {
-  color:#b8813c;
-  font-size: 150px; /* Taille ajustée pour un grand titre */
+  color:black;
+  font-size: 200px; /* Taille ajustée pour un grand titre */
   font-family: "Playfair Display", serif;
   margin: 0;
   padding: 20px;
