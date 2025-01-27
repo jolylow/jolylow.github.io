@@ -262,11 +262,11 @@ p.contenu{
 
 
 
-  img{
+  /* img{
     max-width: 100%;
     height: auto;
         display: block;
-       }
+       } */
 
 
 @media (min-width:640px){
