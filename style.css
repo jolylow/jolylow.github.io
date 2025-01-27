@@ -49,7 +49,7 @@ section.haut-page {
   } 
 
 /* titre portfolio */
-.big-title {
+.big-title h1 {
   color: black;
   font-size: 800px; /* Taille du titre, que tu peux ajuster */
   font-family: "Playfair Display", serif; /* Police choisie */
@@ -284,7 +284,7 @@ p.contenu{
 
   @media (min-width:640px){
   h1 {
-    font-size: 50px;
+    font-size: 100px;
     }
 
   h2 {
@@ -305,20 +305,7 @@ p.contenu{
 
   } 
 
-  /* Ajustement pour les petits écrans */
-@media (max-width: 768px) {
-  .big-title {
-    font-size: 80px; /* Réduit la taille du titre sur les tablettes */
-    margin-top: 50px; /* Réduit l'espace en haut sur les écrans plus petits */
-  }
-}
 
-@media (max-width: 480px) {
-  .big-title {
-    font-size: 50px; /* Encore plus petit sur les écrans très petits */
-    margin-top: 30px; /* Moins d'espace en haut sur les petits écrans */
-  }
-} 
 
 
    
