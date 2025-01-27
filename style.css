@@ -15,7 +15,7 @@ header.header {
 
 /* bandeau */
 section.haut-page {
-   background-color:#f6f3f0;   /* couleur fond */
+   background-image: url('fond.png');
    background-size: cover;   /* l'image couvre tout l'espace */    
    height: 40vh;   /* hauteur dans la page */
    /* A VOIR padding:50px 100px; */
@@ -23,17 +23,18 @@ section.haut-page {
 
 /* menu de naviguation */
 .nav {
-  position: fixed;
-  top: 10px;
-  right: 20px;
-  display: flex;
-  justify-content: space-around;   /* Espacement égal autour de chaque élément */
-  list-style: none;
-  width: 300px;
-  text-decoration: none;
-  padding: 20px;
+   position: fixed;
+   top: 10px;
+   right: 20px;
+   display: flex;
+   justify-content: space-around;   /* Espacement égal autour de chaque élément */
+   list-style: none;
+   width: 300px;
+   text-decoration: none;
+   padding: 20px;
 }
 
+/* menu de naviguation mots */
 .nav li a{
   color:black;
   font-family: "Playfair Display";
@@ -41,9 +42,9 @@ section.haut-page {
   text-decoration: none;
 }
 
+/* menu de naviguation mots sous */
 .nav li a:hover{
   color:#b8813c;
-  border-color: #ffffff;
   } 
 
 /* Titre portfolio  */
