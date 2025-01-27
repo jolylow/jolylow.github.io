@@ -28,8 +28,8 @@ header.header img {
   padding: 0;
   position: absolute; /* Fixe le menu par rapport à la page */
   top: 20px; /* Espacement du menu par rapport au haut */
-  right: 50%; /* Déplace le menu à 50% du côté droit */
-  transform: translateX(50%); /* Déplace le menu vers la gauche de 50% */
+  right: 30%; /* Déplace le menu vers la gauche en réduisant la marge à droite */
+  transform: translateX(30%); /* Ajuste le déplacement pour être plus à gauche */
 }
 
 /* Espacement entre les liens du menu */
@@ -44,11 +44,6 @@ header.header img {
   font-size: 20px;
   text-decoration: none;
   transition: color 0.3s ease;
-}
-
-/* Effet au survol des liens */
-.nav li a:hover {
-  color: #b8813c;
 }
 
 /* Effet au survol des liens */
