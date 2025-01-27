@@ -78,6 +78,69 @@ section.haut-page {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre portée pour améliorer la lisibilité */
 }
 
+.portfolio-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  color: black;
+}
+
+/* Effet de rotation autour du "o" */
+.circle {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.circle::before {
+  content: "o";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: rotateAroundO 5s linear infinite;
+}
+
+.text {
+  display: inline-block;
+  margin-right: 10px; /* Un peu d'espace avant le mot "Portfolio" */
+}
+
+/* Animation de rotation autour du "o" */
+@keyframes rotateAroundO {
+  0% {
+    transform: rotate(0deg) translateY(-20px);
+  }
+  25% {
+    transform: rotate(90deg) translateX(20px);
+  }
+  50% {
+    transform: rotate(180deg) translateY(20px);
+  }
+  75% {
+    transform: rotate(270deg) translateX(-20px);
+  }
+  100% {
+    transform: rotate(360deg) translateY(-20px);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .gridmain{
   display:grid;
   /* grid-template-columns: 1fr 1fr; */
