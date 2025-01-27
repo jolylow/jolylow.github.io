@@ -62,31 +62,6 @@ video{
 }
 
 
-/* Animation "dnmade graphisme..." */
-h3{
-font-family: "Playfair Display";
-  font-size: 25px;
-  color: black;
-  animation-duration: 10s;
-  animation-name: glissement;
-  animation-iteration-count:infinite;
-}
- 
-@keyframes glissement {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-
-  to {
-    margin-left: 20px;
-    width: 100%;
-  }
-}
-
-
-
-
 
 /* h4{
   font-family: "normalidad-compact", sans-serif;
