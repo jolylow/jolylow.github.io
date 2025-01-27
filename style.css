@@ -5,12 +5,11 @@ header.header {
   display: flex;
   justify-content: space-between; /* Espacement entre le logo et la navigation */
   align-items: center; /* Centrer verticalement les éléments */
-  padding: 20px; /* Espacement autour du header */
+  padding: 10px; /* Espacement autour du header */
   position: fixed; /* Position fixe pour garder le header en haut */
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000; /* Assurer que le header reste au-dessus du contenu */
   background-color: #f6f3f0; /* Couleur de fond pour le header */
   width: 100%; /* Faire en sorte que le header prenne toute la largeur */
 }
@@ -72,10 +71,10 @@ section.haut-page {
 /* Taille et style du titre Portfolio */
 .big-title h1 {
   color:black;
-  font-size: 200px; /* Taille ajustée pour un grand titre */
+  font-size: 150px; /* Taille ajustée pour un grand titre */
   font-family: "Playfair Display", serif;
   margin: 0;
-  padding: 20px;
+  padding:10px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre portée pour améliorer la lisibilité */
 }
 
