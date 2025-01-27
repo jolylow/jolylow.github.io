@@ -29,7 +29,7 @@ header.header img {
   position: absolute; /* Fixe le menu par rapport à la page */
   top: 20px; /* Espacement du menu par rapport au haut */
   right:90%; /* Déplace le menu vers la gauche en réduisant la marge à droite */
-  transform: translateX(30%); /* Ajuste le déplacement pour être plus à gauche */
+  transform: translateX(10%); /* Ajuste le déplacement pour être plus à gauche */
 }
 
 /* Espacement entre les liens du menu */
