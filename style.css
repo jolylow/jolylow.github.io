@@ -30,11 +30,10 @@ section.haut-page {
    justify-content: space-around;   /* Espacement égal autour de chaque élément */
    list-style: none;
    width: 300px;
-   text-decoration: none;
-   padding: 20px;
+  text-decoration: none;
+  padding: 20px;
 }
 
-/* menu de naviguation mots */
 .nav li a{
   color:black;
   font-family: "Playfair Display";
@@ -42,9 +41,9 @@ section.haut-page {
   text-decoration: none;
 }
 
-/* menu de naviguation mots sous */
 .nav li a:hover{
   color:#b8813c;
+  border-color: #ffffff;
   } 
 
 /* Titre portfolio  */
