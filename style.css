@@ -47,7 +47,7 @@ section.haut-page {
   } 
 
 /* Titre portfolio  */
-.big-title {
+section.big-title {
   color: black;
   font-size: 120px; /* Taille du titre, que tu peux ajuster */
   padding: 0 20px; /* Espacement autour du titre à gauche et à droite */
