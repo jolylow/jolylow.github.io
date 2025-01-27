@@ -78,53 +78,51 @@ section.haut-page {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre portée pour améliorer la lisibilité */
 }
 
-.portfolio-container {
+/* Container du titre */
+.big-title h1 {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: Arial, sans-serif;
-  font-size: 24px;
-  color: black;
-}
-
-/* Effet de rotation autour du "o" */
-.circle {
-  position: relative;
-  display: inline-block;
+  font-size: 36px;
   font-weight: bold;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* Ajuster en fonction de l'espace nécessaire */
 }
 
-.circle::before {
-  content: "o";
+/* Texte tournant autour de la lettre O */
+.circle-text {
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
-  animation: rotateAroundO 5s linear infinite;
+  transform-origin: center center;
+  animation: rotateAroundO 10s linear infinite;
+  white-space: nowrap;
+  font-size: 20px; /* Taille du texte circulaire */
 }
 
-.text {
-  display: inline-block;
-  margin-right: 10px; /* Un peu d'espace avant le mot "Portfolio" */
+/* Position du mot Portfolio */
+.portfolio-center {
+  z-index: 1;
+  text-align: center;
 }
 
-/* Animation de rotation autour du "o" */
+/* Animation du texte tournant autour du O */
 @keyframes rotateAroundO {
   0% {
-    transform: rotate(0deg) translateY(-20px);
+    transform: translate(-50%, -50%) rotate(0deg);
   }
   25% {
-    transform: rotate(90deg) translateX(20px);
+    transform: translate(-50%, -50%) rotate(90deg);
   }
   50% {
-    transform: rotate(180deg) translateY(20px);
+    transform: translate(-50%, -50%) rotate(180deg);
   }
   75% {
-    transform: rotate(270deg) translateX(-20px);
+    transform: translate(-50%, -50%) rotate(270deg);
   }
   100% {
-    transform: rotate(360deg) translateY(-20px);
+    transform: translate(-50%, -50%) rotate(360deg);
   }
 }
 
