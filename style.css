@@ -47,15 +47,13 @@ section.haut-page {
 
 .big-title {
   position: absolute;
-  top: 50%; /* Centre verticalement dans la section */
-  left: 50%;
   transform: translate(-50%, -50%); /* Centrer précisément le titre */
   text-align: center;
 }
 
 .big-title h1 {
   color: black;
-  font-size: 200px; /* Taille du titre (ajuste en fonction du besoin) */
+  font-size: 500px; /* Taille du titre (ajuste en fonction du besoin) */
   font-family: "Playfair Display", serif;
   margin: 0;
   padding: 20px;
