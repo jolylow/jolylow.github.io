@@ -5,8 +5,12 @@ header.header {
   display: flex;
   justify-content: space-between; /* Espacement entre le logo et la navigation */
   align-items: center; /* Centrer verticalement les éléments */
+  position: absolute; /* Positionne le header en haut de la page */
+  top: 0; /* Assure qu'il est tout en haut */
+  left: 0; /* Aligne le header sur le côté gauche */
+  right: 0; /* Aligne aussi le côté droit du header */
   padding: 20px; /* Espacement autour du header */
-  position: relative; /* Pour s'assurer que le logo et le menu flottent au-dessus du fond */
+  z-index: 1000; /* Assure que le header reste au-dessus du contenu */
 }
 
 /* Taille du logo dans le header */
