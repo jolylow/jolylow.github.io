@@ -15,26 +15,11 @@ header.header {
 
 /* bandeau */
 section.haut-page {
-  background-image: url('fond.png'); /* Lien vers l'image de fond */
-  background-size: cover; /* L'image couvre toute la section */
-  background-position: center; /* L'image est centrée */
-  background-repeat: no-repeat; /* L'image ne se répète pas */
-  height: 40vh; /* Hauteur de la section (40% de la hauteur de la fenêtre) */
-  width: 100%; /* La section prend toute la largeur de l'écran */
-  color: white; /* Texte en blanc pour bien ressortir sur l'image */
-  text-align: center; /* Centre le texte horizontalement */
-  display: flex; /* Utilisation de Flexbox pour centrer le contenu */
-  flex-direction: column; /* Le contenu est empilé verticalement */
-  justify-content: center; /* Centre le contenu verticalement */
-  padding: 0 20px; /* Un peu de padding pour espacer le texte des bords */
-  background-color: #f6f3f0; /* Ajout d'une couleur de fond au cas où l'image ne se charge pas */
+   background-color:#f6f3f0;   /* couleur fond */
+   background-size: cover;   /* l'image couvre tout l'espace */    
+   height: 40vh;   /* hauteur dans la page */
+   /* A VOIR padding:50px 100px; */
 }
-
-/* Ajoute une bordure ou une couleur pour tester visuellement si la section existe */
-section.haut-page {
-  border: 2px solid red; /* Ceci est temporaire pour tester */
-}
-
 
 /* menu de naviguation */
 .nav {
