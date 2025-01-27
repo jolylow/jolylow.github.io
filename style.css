@@ -25,7 +25,7 @@ header.header img {
   display: flex;
   list-style: none;
   margin: 10;
-  padding: 0;
+  padding-right: 20px;
   position: absolute; /* Fixe le menu par rapport à la page */
   top: 40px; /* Espacement du menu par rapport au haut */
   right: 30%; /* Ajuste légèrement la position du menu vers la gauche */
