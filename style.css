@@ -15,18 +15,12 @@ header.header {
 
 /* bandeau */
 section.haut-page {
-  background-image: url("fond.png");  /* L'image de fond */
-  background-size: cover;  /* L'image couvre toute la section */
-  background-position: center;  /* Centrage de l'image */
-  background-repeat: no-repeat;  /* Empêche l'image de se répéter */
-  height: 40vh;  /* Hauteur de la section, 40% de la hauteur de la fenêtre */
-  color: white;  /* Couleur du texte pour le rendre lisible sur l'image */
-  text-align: center;  /* Centre le texte horizontalement */
-  display: flex;  /* Utilisation de flexbox pour centrer le contenu */
-  flex-direction: column;  /* Les éléments sont empilés verticalement */
-  justify-content: center;  /* Centre le contenu verticalement */
-  align-items: center;  /* Centre le contenu horizontalement */
-  padding: 20px;  /* Un peu de padding autour du contenu */
+   position: center;
+   padding: 15px 20px;
+   background-color:#f6f3f0;   /* couleur fond */
+   background-size: cover;   /* l'image couvre tout l'espace */    
+   height: 40vh;   /* hauteur dans la page */
+   /* A VOIR padding:50px 100px; */
 }
 
 /* menu de naviguation */
