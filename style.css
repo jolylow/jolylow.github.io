@@ -51,7 +51,7 @@ section.haut-page {
 /* titre portfolio */
 .big-title {
   color: black;
-  font-size: 500px; /* Taille du titre, que tu peux ajuster */
+  font-size: 800px; /* Taille du titre, que tu peux ajuster */
   font-family: "Playfair Display", serif; /* Police choisie */
   text-align: center; /* Centre le texte horizontalement */
   margin-top: 50px;
