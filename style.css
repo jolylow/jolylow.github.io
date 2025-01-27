@@ -49,14 +49,14 @@ section.haut-page {
   display: flex;
   justify-content: center; /* Centre horizontalement */
   align-items: flex-start; /* Aligne les éléments du haut vers le haut */
-  padding-top: 100px; /* Décale un peu plus bas pour donner de l'espace au titre */
+  padding-top: 120px; /* Augmente le padding-top pour donner plus d'espace au titre */
 }
 
 /* Titre Portfolio centré */
 .big-title {
   text-align: center;
   position: absolute;
-  top: 50%; /* Place le titre au centre de la page (verticalement) */
+  top: 50%; /* Place le titre au centre verticalement de la section */
   left: 50%; /* Centre horizontalement */
   transform: translate(-50%, -50%); /* Compense la taille du titre pour qu'il soit centré */
 }
