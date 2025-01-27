@@ -15,7 +15,7 @@ header.header {
 
 /* bandeau */
 section.haut-page {
-   background-color:#f6f3f0;   /* couleur fond */
+   background-image:"fond.png";   /* couleur fond */
    background-size: cover;   /* l'image couvre tout l'espace */    
    height: 40vh;   /* hauteur dans la page */
    /* A VOIR padding:50px 100px; */
