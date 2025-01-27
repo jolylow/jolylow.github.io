@@ -78,65 +78,6 @@ section.haut-page {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre portée pour améliorer la lisibilité */
 }
 
-/* Container du titre */
-.big-title h1 {
-  position: relative;
-  font-size: 36px;
-  font-weight: bold;
-  color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 200px; /* Ajuster en fonction de l'espace nécessaire */
-}
-
-/* Texte tournant autour de la lettre O */
-.circle-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform-origin: center center;
-  animation: rotateAroundO 10s linear infinite;
-  white-space: nowrap;
-  font-size: 20px; /* Taille du texte circulaire */
-}
-
-/* Position du mot Portfolio */
-.portfolio-center {
-  z-index: 1;
-  text-align: center;
-}
-
-/* Animation du texte tournant autour du O */
-@keyframes rotateAroundO {
-  0% {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-  25% {
-    transform: translate(-50%, -50%) rotate(90deg);
-  }
-  50% {
-    transform: translate(-50%, -50%) rotate(180deg);
-  }
-  75% {
-    transform: translate(-50%, -50%) rotate(270deg);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .gridmain{
@@ -165,7 +106,7 @@ section.haut-page {
 }  
 
 .gridmain a:hover{
-  color: rgb(167, 167, 167);
+  color: rgb(0, 0, 0);
 }
 
 
