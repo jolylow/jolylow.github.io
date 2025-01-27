@@ -49,14 +49,31 @@ section.haut-page {
 /* Titre portfolio  */
 .big-title {
   color: black;
-  padding: 70px 20px; /* Espacement autour du titre, tu peux aussi ajuster ça */
-  font-family: "Playfair Display"; /* Police choisie */
+  font-size: 120px; /* Taille du titre, que tu peux ajuster */
+  padding: 0 20px; /* Espacement autour du titre à gauche et à droite */
+  margin-top: 100px; /* Espacement supplémentaire en haut du titre */
+  font-family: "Playfair Display", serif; /* Police choisie */
   text-align: center; /* Centre le texte horizontalement */
-  margin: 0; /* Supprime les marges par défaut du titre */
-  display: flex; /* Flexbox pour aligner le titre */
+  margin-bottom: 0; /* Annule les marges par défaut du titre */
+  display: flex; /* Utilisation de Flexbox pour centrer le contenu */
   justify-content: center; /* Centre horizontalement */
-  align-items: center; /* Centre verticalement */
-  height: 100%; /* Assure que l'élément prend toute la hauteur disponible de son conteneur */
+  align-items: center; /* Centre verticalement dans son parent */
+  height: 100%; /* Assure que l'élément prend toute la hauteur de son conteneur */
+}
+
+/* Ajustement pour les petits écrans */
+@media (max-width: 768px) {
+  .big-title {
+    font-size: 80px; /* Réduit la taille du titre sur les tablettes */
+    margin-top: 50px; /* Réduit l'espace en haut sur les écrans plus petits */
+  }
+}
+
+@media (max-width: 480px) {
+  .big-title {
+    font-size: 50px; /* Encore plus petit sur les écrans très petits */
+    margin-top: 30px; /* Moins d'espace en haut sur les petits écrans */
+  }
 }
 
 
