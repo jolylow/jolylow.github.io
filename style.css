@@ -47,11 +47,17 @@ section.haut-page {
   } 
 
 /* Titre portfolio  */
-.big-title{
+.big-title {
   color: black;
-  font-size: 400px;
-  padding: 70px 20px;
-  font-family: "Playfair Display";
+  font-size: 400px; /* Taille du titre, tu peux l'ajuster selon ton besoin */
+  padding: 70px 20px; /* Espacement autour du titre, tu peux aussi ajuster ça */
+  font-family: "Playfair Display"; /* Police choisie */
+  text-align: center; /* Centre le texte horizontalement */
+  margin: 0; /* Supprime les marges par défaut du titre */
+  display: flex; /* Flexbox pour aligner le titre */
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  height: 100%; /* Assure que l'élément prend toute la hauteur disponible de son conteneur */
 }
 
 
