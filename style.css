@@ -15,16 +15,9 @@ header.header {
   width: 100%; /* Faire en sorte que le header prenne toute la largeur */
 }
 
-header.header {
-  display: flex;
-  justify-content: space-between; /* Espacement entre le logo et le menu */
-  align-items: center; /* Aligne le logo et le menu verticalement */
-  padding: 10px 20px; /* Ajoute un peu de marge autour */
-}
-
 /* Taille du logo dans le header */
-header.header .logo img {
-  max-width: 150px; /* Taille du logo */
+header.header img {
+  max-width: 150px; 
 }
 
 /* Navigateur */
@@ -33,6 +26,9 @@ header.header .logo img {
   list-style: none;
   margin: 0;
   padding: 0;
+  position: absolute; /* Fixe le menu par rapport à la page */
+  top: 20px; /* Espacement du menu par rapport au haut */
+  right: 0; /* Aligne le menu complètement à droite */
 }
 
 /* Espacement entre les liens du menu */
