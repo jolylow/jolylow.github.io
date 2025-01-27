@@ -28,7 +28,7 @@ header.header img {
   padding: 0;
   position: absolute; /* Fixe le menu par rapport à la page */
   top: 20px; /* Espacement du menu par rapport au haut */
-  right: 70px; /* Ajuste la distance du menu à la droite de la page */
+  right: 0; /* Aligne le menu complètement à droite */
 }
 
 /* Espacement entre les liens du menu */
