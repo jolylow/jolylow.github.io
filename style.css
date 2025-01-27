@@ -68,7 +68,7 @@ section.haut-page {
 
 /* Taille et style du titre Portfolio */
 .big-title h1 {
-  color: black;
+  color: #b8813c;
   font-size: 150px; /* Taille ajustée pour un grand titre */
   font-family: "Playfair Display", serif;
   margin: 0;
