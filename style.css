@@ -52,12 +52,10 @@ header.header img {
 /* Définir l'animation du titre */
 @keyframes slide-in {
   0% {
-    transform: translateX(-100%); /* Position hors de l'écran à gauche */
-    opacity: 0; /* Commence invisible */
+    transform: translateX(-100vw); /* Hors de l'écran à gauche */
   }
   100% {
-    transform: translateX(-50%) translateY(-50%); /* Positionne le titre au centre */
-    opacity: 1; /* Rends-le complètement visible */
+    transform: translateX(-50%) translateY(-50%); /* Centre le titre (en X et Y) */
   }
 }
 
