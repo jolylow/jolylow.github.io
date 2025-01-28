@@ -49,6 +49,18 @@ header.header img {
   color: #b8813c;
 }
 
+/* Définir l'animation du titre */
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%); /* Position hors de l'écran à gauche */
+    opacity: 0; /* Commence invisible */
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%); /* Positionne le titre au centre */
+    opacity: 1; /* Rends-le complètement visible */
+  }
+}
+
 /* Section contenant le titre (bandeau) */
 section.haut-page {
   background-color: #f6f3f0; /* Couleur de fond de la section */
@@ -66,17 +78,24 @@ section.haut-page {
   top: 50%; /* Centré verticalement */
   left: 50%; /* Centré horizontalement */
   transform: translate(-50%, -50%); /* Centrer précisément le titre */
+  animation: slide-in 2s ease-out; /* Appliquer l'animation */
 }
 
 /* Taille et style du titre Portfolio */
 .big-title h1 {
-  color:black;
+  color: black;
   font-size: 150px; /* Taille ajustée pour un grand titre */
   font-family: "Playfair Display", serif;
   margin: 0;
-  padding:10px;
+  padding: 10px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre portée pour améliorer la lisibilité */
 }
+
+
+ /* nouveau test  */
+
+
+
 
 
 
