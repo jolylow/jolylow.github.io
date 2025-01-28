@@ -52,10 +52,10 @@ header.header img {
 /* Définir l'animation du titre */
 @keyframes slide-in {
   0% {
-    transform: translateX(-100vw); /* Hors de l'écran à gauche */
+    transform: translateX(-100vw); /* Hors de l'écran à gauche (100% de la largeur de la fenêtre) */
   }
   100% {
-    transform: translateX(-50%) translateY(-50%); /* Centre le titre (en X et Y) */
+    transform: translateX(-50%) translateY(-50%); /* Déplace le titre au centre (horizontalement et verticalement) */
   }
 }
 
@@ -75,8 +75,9 @@ section.haut-page {
   position: absolute;
   top: 50%; /* Centré verticalement */
   left: 50%; /* Centré horizontalement */
-  transform: translate(-50%, -50%); /* Centrer précisément le titre */
-  animation: slide-in 2s ease-out; /* Appliquer l'animation */
+  transform: translate(-50%, -50%); /* Centre précisément le titre */
+  animation: slide-in 2s ease-out forwards; /* Applique l'animation qui glisse le titre depuis la gauche */
+  white-space: nowrap; /* Assure que le titre reste sur une seule ligne */
 }
 
 /* Taille et style du titre Portfolio */
@@ -88,7 +89,6 @@ section.haut-page {
   padding: 10px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre portée pour améliorer la lisibilité */
 }
-
 
  /* nouveau test  */
 
