@@ -52,10 +52,10 @@ header.header img {
 /* Définir l'animation du titre */
 @keyframes slide-in {
   0% {
-    transform: translateX(-100vw); /* Hors de l'écran à gauche (100% de la largeur de la fenêtre) */
+    transform: translateY(-100vh) translateX(-50%); /* Hors de l'écran en haut */
   }
   100% {
-    transform: translateX(-50%) translateY(-50%); /* Déplace le titre au centre (horizontalement et verticalement) */
+    transform: translateY(-50%) translateX(-50%); /* Centre le titre à la fois verticalement et horizontalement */
   }
 }
 
@@ -76,7 +76,7 @@ section.haut-page {
   top: 50%; /* Centré verticalement */
   left: 50%; /* Centré horizontalement */
   transform: translate(-50%, -50%); /* Centre précisément le titre */
-  animation: slide-in 2s ease-out forwards; /* Applique l'animation qui glisse le titre depuis la gauche */
+  animation: slide-in 2s ease-out forwards; /* Applique l'animation de glissement */
   white-space: nowrap; /* Assure que le titre reste sur une seule ligne */
 }
 
