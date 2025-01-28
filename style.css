@@ -49,13 +49,13 @@ header.header img {
   color: #b8813c;
 }
 
-/* Définir l'animation de fondu */
-@keyframes fade-in {
+/* Définir l'animation du titre */
+@keyframes slide-in {
   0% {
-    opacity: 0; /* Au début, le titre est invisible */
+    transform: translateX(-100vw); /* Hors de l'écran à gauche (100% de la largeur de la fenêtre) */
   }
   100% {
-    opacity: 1; /* À la fin, le titre devient complètement visible */
+    transform: translateX(-50%) translateY(-50%); /* Déplace le titre au centre (horizontalement et verticalement) */
   }
 }
 
@@ -76,7 +76,7 @@ section.haut-page {
   top: 50%; /* Centré verticalement */
   left: 50%; /* Centré horizontalement */
   transform: translate(-50%, -50%); /* Centre précisément le titre */
-  animation: fade-in 2s ease-out forwards; /* Applique l'animation de fondu */
+  animation: slide-in 2s ease-out forwards; /* Applique l'animation qui glisse le titre depuis la gauche */
   white-space: nowrap; /* Assure que le titre reste sur une seule ligne */
 }
 
