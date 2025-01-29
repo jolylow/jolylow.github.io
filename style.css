@@ -1,18 +1,18 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&display=swap");
 
-/* Header : Déplacement du logo et de la navigation */
+/* Header : logo et navigation */
 header.header {
   display: flex;
   justify-content: space-between; /* Espacement entre le logo et la navigation */
   align-items: center; /* Centrer verticalement les éléments */
-  padding: 10px; /* Espacement autour du header */
-  position: fixed; /* Position fixe pour garder le header en haut */
-  top: 10px; /* Décaler un peu moins vers le haut */
+  padding: 10px;
+  position: fixed;
+  top: 10px;
   left: 0;
   right: 0;
   z-index: 1000; /* Assurer que le header reste au-dessus du contenu */
-  background-color: #f6f3f0; /* Couleur de fond pour le header */
+  background-color: #f6f3f0;
   width: 100%; /* Faire en sorte que le header prenne toute la largeur */
 }
 
