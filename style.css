@@ -263,26 +263,24 @@ section.about-me p {
   }
 }
 
-/* Conteneur principal (grille avec 2 colonnes) */
 .container {
-  background-color: black; /* Fond orange */
+  background-color: black; /* Fond noir */
   display: grid;
   grid-template-columns: 50% 50%; /* 50% pour la partie gauche (liens) et 50% pour la partie droite (images) */
   height: 100vh; /* Occupe toute la hauteur de la fenêtre */
   width: 100%; /* Occupe toute la largeur de la fenêtre */
-  
 }
 
 /* Partie gauche : les liens */
 .grid-left {
   display: flex;
   flex-direction: column; /* Les liens sont empilés verticalement */
-  gap: 30px; /* Espacement entre les liens */
+  gap: 20px; /* Espacement entre les liens */
   padding: 20px; /* Espacement autour des liens */
   width: 100%; /* La grille prend toute la largeur de sa portion (50%) */
   box-sizing: border-box; /* Inclut le padding dans la largeur de l'élément */
   position: relative; /* Pour le positionnement des images associées */
-  margin-left: 100px; /* Décale le logo vers la droite */
+  margin-left: 120px; /* Décale les liens vers la droite */
 }
 
 /* Partie droite : les images associées */
@@ -296,20 +294,12 @@ section.about-me p {
   overflow-y: auto; /* Permet de scroller si le contenu dépasse la hauteur */
 }
 
-/* Les images par défaut sont cachées */
-.grid-right .image {
-  display: none; /* Masquer les images par défaut */
-  opacity: 0; /* Masquer les images par défaut */
-  transition: opacity 0.3s ease-in-out; /* Effet de fondu */
-  max-width: 400px; /* Limiter la taille des images */
-  height: auto;
-}
-
 /* Partie gauche : chaque lien avec son image associée */
 .menu-item {
-  position: relative; /* Permet de positionner l'image au-dessus du lien */
+  position: relative; /* Permet de positionner l'image et le texte entre le lien et l'image */
+  display: flex;
+  align-items: center; /* Aligner le lien et le texte au centre */
 }
-
 
 /* Liens */
 .menu-link {
@@ -318,15 +308,16 @@ section.about-me p {
   font-family: "PT Serif", serif; /* Police du texte */
   font-weight: 500; /* Poids du texte */
   font-style: normal; /* Style normal */
-  font-size: 15px;
+  font-size: 16px;
   padding: 10px;
   transition: 0.3s;
   border-bottom: 1px solid #b8813c;
+  position: relative; /* Pour positionner le texte au-dessus du lien */
 }
 
 /* Assurer que les liens changent de couleur et se réduisent au survol */
 .menu-link:hover {
-  color:#193324; /* Changer la couleur du lien */
+  color: #193324; /* Changer la couleur du lien */
   transform: scale(1.1); /* Agrandir légèrement le lien */
   font-size: 18px; /* Réduire la taille du texte */
 }
@@ -356,19 +347,121 @@ section.about-me p {
   font-size: 18px; /* Réduire légèrement la taille du texte */
 }
 
+/* Le texte qui apparaît entre le lien et l'image */
+.menu-item:hover .menu-link::after {
+  content: attr(data-text); /* Afficher le texte défini dans l'attribut data-text */
+  font-size: 13px;
+  color: #b8813c; /* Couleur du texte */
+  margin-left: 15px; /* Espacement entre le lien et le texte */
+  margin-right: 10px; /* Espacement entre le texte et l'image */
+  opacity: 1; /* Le texte devient visible */
+  display: inline-block; /* Pour qu'il soit aligné avec le lien */
+  transition: opacity 0.3s ease-in-out; /* Transition pour l'opacité */
+}
+
+/* Cacher le texte par défaut (avant le survol) */
+.menu-link::after {
+  content: ""; /* Aucun texte par défaut */
+  opacity: 0;
+}
+
+
+
+
+/* NOUVELLE PAGE  */
+
+/* Container principal */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Trois colonnes égales */
+  padding: 0px; /* Espacement autour de la grille (haut, bas, gauche, droite) */
+  box-sizing: border-box;
+  height: 100vh; /* La hauteur du container prend 100% de la hauteur de la fenêtre */
+  width: 100%; /* La largeur du container prend 100% de la fenêtre */
+  background-color: black; /* Fond noir pour toute la page */
+}
+
+/* Colonne 1 et 2 : Images (avec fond noir) */
+.images-large {
+  grid-column: span 2; /* L’image va s’étendre sur les deux premières colonnes */
+  background-color: black; /* Fond noir pour la colonne contenant les images */
+  display: flex; /* Flexbox pour aligner les images verticalement */
+  flex-direction: column; /* Les images s'affichent les unes sous les autres */
+  justify-content: flex-start; /* Les images sont en haut de la colonne */
+  height: 100%; /* S’assurer que la colonne occupe toute la hauteur disponible */
+}
+
+/* Conteneur d'une image (avec fond noir et espacement) */
 .image-container {
-    position: relative;
-    display: inline-block;
-    width: 300px; /* Ou la taille de ton image */
-    height: 300px; /* Ou la taille de ton image */
+  background-color: black; /* Fond noir pour chaque image */
+  margin-bottom: 8px; /* Espacement entre les images */
+  padding: 20px; /* Espacement autour de l'image */
+  border-radius: 0px; /* Bord arrondi */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Légère ombre autour de l'image */
+  overflow: hidden; /* Si l'image dépasse le conteneur, elle sera masquée */
 }
 
+/* Image dans le conteneur */
 .image-container img {
-    width: 100%;
-    height: 100%;
+  width: 100%; /* L’image prend toute la largeur disponible du conteneur */
+  height: auto; /* La hauteur s'ajuste automatiquement pour garder les proportions */
+  border-radius: 10px;
 }
 
+/* Colonne droite : Header et informations */
+.right-column {
+  background-color: black; /* Fond clair pour le côté informations */
+  padding: 30px; /* Espacement à l'intérieur de la colonne droite */
+  border-radius: 10px;
+  height: 100%; /* Hauteur de la colonne égale à la hauteur de la fenêtre */
+  position: fixed; /* Fixe la colonne à droite de la page */
+  top: 0px; /* Fixe la colonne tout en haut */
+  right: 0; /* Positionne la colonne à droite */
+  width: 30%; /* Donne à la colonne une largeur de 30% de la page */
+  z-index: 10; /* Assure que la colonne reste au-dessus du contenu */
+}
+.right-column header {
+  text-align: center;
+  margin-bottom: 20px; /* Espacement sous le titre */
+  width: 100%; /* Pour s'assurer que le titre peut occuper toute la largeur */
+}
+/* Le titre (h1) dans la colonne droite */
+.right-column h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  color: #333; /* Couleur initiale */
+  transition: color 0.3s ease; /* Transition douce pour le changement de couleur */
 
+}
+
+/* Changer la couleur du titre lors du survol */
+.right-column h1:hover {
+  color: #ff6347; /* Couleur du titre lors du survol (tomato) */
+}
+
+.right-column h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 50px;
+  color: white;
+}
+
+/* Contenu de la colonne d'informations */
+.right-column .info {
+  font-size: 15px; /* Taille du texte en rem pour plus de flexibilité */
+  font-family: "Playfair Display", serif;
+  line-height: 1.5; /* Espacement entre les lignes pour améliorer la lisibilité */
+  color: #666;
+  padding: 3px; /* Un peu d'espacement autour du texte */
+}
+
+/* Contenu de la colonne d'informations */
+.right-column .info1 {
+  font-size: 15px; /* Taille du texte en rem pour plus de flexibilité */
+  font-family: "Playfair Display", serif;
+  line-height: 1; /* Espacement entre les lignes pour améliorer la lisibilité */
+  color:#b8813c;
+  padding: 3px; /* Un peu d'espacement autour du texte */
+}
 
 
 
@@ -434,7 +527,7 @@ p{
 .projects a:hover img{
     transform:scale(0.9);
     filter:opacity(60%);
-    } */ */
+    } */ 
 
 /* .projects img{
     margin: 30px;
@@ -443,7 +536,7 @@ p{
 
 
 
-Pages projets
+/* Pages projets
 
 .titre{
     margin-bottom: 30px;
@@ -458,11 +551,11 @@ p.contenu{
     margin-bottom: 30px;
     padding-left: 50px;
     } */
-
+ */
 
 
 /* Grid images */    
-.grid-photo{
+/* .grid-photo{
     display: grid;
     grid-template-columns: 1fr;
     gap: 60px;
@@ -504,7 +597,7 @@ p.contenu{
     }
 
 
-
+/* 
 .grid-beatmakers{
     display: grid;
     grid-template-columns: 1fr;
@@ -552,14 +645,14 @@ p.contenu{
 
 
 
-  img{
+  /* img{
     max-width: 100%;
     height: auto;
         display: block;
-       }
+       } */
 
 
-@media (min-width:640px){
+/* @media (min-width:640px){
   .projects{
     grid-template-columns: 1fr 1fr 1fr;
     }
@@ -594,9 +687,7 @@ p.contenu{
     font-size: 100px;
     }
 
-  h2 {
-    font-size: 50px;
-    }
+
 
   h3 {
     font-size: 30px;
@@ -610,23 +701,21 @@ p.contenu{
     }
 
 
-  } 
+  }  */
 
 
 /* Responsivité pour les petits écrans */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .big-title h1 {
     font-size: 80px; /* Réduit la taille du titre sur les tablettes */
-  }
+  /* }
 }
 
 @media (max-width: 480px) {
   .big-title h1 {
     font-size: 40px; /* Encore plus petit sur les écrans très petits */
-  }
-}
-
-   
+  /* }
+} */
 
   
   
