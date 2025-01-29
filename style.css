@@ -303,7 +303,7 @@ section.about-me p {
 
 /* Liens */
 .menu-link {
-  color: rgb(214, 212, 212);
+  color: white;
   text-decoration: none;
   font-family: "PT Serif", serif; /* Police du texte */
   font-weight: 500; /* Poids du texte */
@@ -317,7 +317,7 @@ section.about-me p {
 
 /* Assurer que les liens changent de couleur et se réduisent au survol */
 .menu-link:hover {
-  color: #193324; /* Changer la couleur du lien */
+  color: white; /* Changer la couleur du lien */
   transform: scale(1.1); /* Agrandir légèrement le lien */
   font-size: 18px; /* Réduire la taille du texte */
 }
@@ -371,20 +371,20 @@ section.about-me p {
 /* NOUVELLE PAGE DROP  */
 
 /* Container principal */
-.container {
+.container2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; /* Trois colonnes égales */
   padding: 0px; /* Espacement autour de la grille (haut, bas, gauche, droite) */
   box-sizing: border-box;
   height: 100vh; /* La hauteur du container prend 100% de la hauteur de la fenêtre */
   width: 100%; /* La largeur du container prend 100% de la fenêtre */
-  background-color: black; /* Fond noir pour toute la page */
+  background-color: rgb(186, 186, 186); /* Fond noir pour toute la page */
 }
 
 /* Colonne 1 et 2 : Images (avec fond noir) */
 .images-large {
   grid-column: span 2; /* L’image va s’étendre sur les deux premières colonnes */
-  background-color: black; /* Fond noir pour la colonne contenant les images */
+  background-color: rgb(186, 186, 186); /* Fond noir pour la colonne contenant les images */
   display: flex; /* Flexbox pour aligner les images verticalement */
   flex-direction: column; /* Les images s'affichent les unes sous les autres */
   justify-content: flex-start; /* Les images sont en haut de la colonne */
@@ -392,8 +392,8 @@ section.about-me p {
 }
 
 /* Conteneur d'une image (avec fond noir et espacement) */
-.image-container {
-  background-color: black; /* Fond noir pour chaque image */
+.image-container2 {
+  background-color: rgb(186, 186, 186); /* Fond noir pour chaque image */
   margin-bottom: 8px; /* Espacement entre les images */
   padding: 20px; /* Espacement autour de l'image */
   border-radius: none; /* Bord arrondi */
@@ -402,7 +402,7 @@ section.about-me p {
 }
 
 /* Image dans le conteneur */
-.image-container img {
+.image-container2 img {
   width: 100%; /* L’image prend toute la largeur disponible du conteneur */
   height: auto; /* La hauteur s'ajuste automatiquement pour garder les proportions */
   border-radius: none;
@@ -431,7 +431,18 @@ section.about-me p {
   font-size: 40px;
   color: #333; /* Couleur initiale */
   transition: color 0.3s ease; /* Transition douce pour le changement de couleur */
+  position: relative; /* Nécessaire pour utiliser position:absolute sur l'élément de soulignement */
+}
 
+/* Soulignement personnalisé */
+.right-column h1::after {
+  content: ''; 
+  position: absolute;
+  bottom: -10px; /* Espacement sous le texte, ajustable */
+  left: 0;
+  width: 100%;
+  height: 2px; /* Épaisseur du soulignement */
+  background-color:#193324 /* Couleur du soulignement (choisir la couleur que tu veux) */
 }
 
 /* Changer la couleur du titre lors du survol */
@@ -464,6 +475,37 @@ section.about-me p {
 }
 
 
+/* NOUVELLE PAGE Parfum  */
+
+.container3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Créer une grille de 3 colonnes égales */
+  gap: 10px; /* Espacement entre les colonnes */
+  padding: 20px ; /* Espacement autour de la grille (haut, bas, gauche, droite) */
+  box-sizing: border-box;
+  background-color: rgb(186, 186, 186);
+}
+
+.image-petite {
+  display: grid;
+  justify-content: center; /* Centrer l'image horizontalement */
+  align-items: center; /* Centrer l'image verticalement */
+  height: auto; /* Hauteur automatique pour s'ajuster à l'image */
+  background-color: rgb(186, 186, 186);
+  padding: 7px;
+}
+
+.image {
+  width: 100%; /* L'image occupe toute la largeur du conteneur */
+  height: auto; /* Garder les proportions de l'image */
+  object-fit: contain; /* Faire en sorte que l'image s'adapte sans être coupée */
+  background-color: rgb(186, 186, 186); /* Fond noir pour la colonne contenant les images */
+  display: flex; /* Flexbox pour aligner les images verticalement */
+  flex-direction: column; /* Les images s'affichent les unes sous les autres */
+  justify-content: flex-start; /* Les images sont en haut de la colonne */
+  height: 100%; /* S’assurer que la colonne occupe toute la hauteur disponible */
+
+}
 
 
 
