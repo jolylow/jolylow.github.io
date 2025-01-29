@@ -368,7 +368,7 @@ section.about-me p {
 
 
 
-/* NOUVELLE PAGE  */
+/* NOUVELLE PAGE DROP  */
 
 /* Container principal */
 .container {
@@ -396,7 +396,7 @@ section.about-me p {
   background-color: black; /* Fond noir pour chaque image */
   margin-bottom: 8px; /* Espacement entre les images */
   padding: 20px; /* Espacement autour de l'image */
-  border-radius: 0px; /* Bord arrondi */
+  border-radius: none; /* Bord arrondi */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Légère ombre autour de l'image */
   overflow: hidden; /* Si l'image dépasse le conteneur, elle sera masquée */
 }
@@ -405,7 +405,7 @@ section.about-me p {
 .image-container img {
   width: 100%; /* L’image prend toute la largeur disponible du conteneur */
   height: auto; /* La hauteur s'ajuste automatiquement pour garder les proportions */
-  border-radius: 10px;
+  border-radius: none;
 }
 
 /* Colonne droite : Header et informations */
