@@ -1,6 +1,82 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&display=swap");
 
+.page-about-me {
+  background-color: black; 
+  margin: 0;
+  padding: 0;
+  font-family: "Playfair Display", serif; /* Police par défaut */
+  text-align: center; /* Centre le texte de la page */
+}
+
+
+
+.page-about-me .return-link a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #b8813c; /* Couleur marron/ocre */
+}
+
+
+
+/* Style pour les liens email et LinkedIn */
+.page-about-me .contact-info {
+  margin-top: 200px; /* Marge pour espacer le contenu principal du haut de la page */
+}
+
+.page-about-me .email-link, .page-about-me .linkedin-link {
+  font-size: 20px; /* Taille du texte */
+  text-decoration: none;
+  font-family: "Playfair Display", serif;
+  color: #b8813c; 
+  display: block;
+  margin-bottom: 40px; /* Marge sous chaque lien */
+}
+
+.page-about-me .email-link:hover, .page-about-me .linkedin-link:hover {
+  text-decoration: underline; /* Sous-lignage au survol */
+}
+
+/* Style pour l'image */
+.page-about-me .about .full-width-image {
+  display: block;
+  margin: 30px auto;  /* Centre l'image horizontalement avec une marge autour */
+  width: 80%; /* Rendre l'image plus petite (80% de la largeur de l'écran) */
+  height: auto;  /* Maintient les proportions de l'image */
+}
+
+
+/* Style pour le lien retour */
+.return-link {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  margin-top: 30px;
+  top: 40px; /* Espacement du menu par rapport au haut */
+  
+}
+
+.return-link a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white; /* Couleur bleue */
+}
+
+.return-link a:hover {
+  text-decoration: none; /* Lien avec effet au survol */
+  color: #b8813c;
+}
+
+/* Style pour l'image */
+.about .full-width-image {
+  display: block;
+  margin: 30px auto;  /* Centre l'image horizontalement avec une marge autour */
+  width: 80%; /* Rendre l'image plus petite (50% de la largeur de l'écran) */
+  height: auto;  /* Maintenir les proportions de l'image */
+  margin-top: 100px;
+}
+
+
+
 
 body {
   background-color: black; /* Fond noir sur toute la page */
