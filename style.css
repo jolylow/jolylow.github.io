@@ -1,6 +1,14 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&display=swap");
 
+
+body {
+  background-color: black; /* Fond noir sur toute la page */
+  margin: 0;
+  padding: 0;
+  height: 100%; /* le body occupe toute la hauteur de la fenêtre */
+}
+
 /* Header : logo et navigation */
 header.header {
   display: flex;
@@ -11,30 +19,30 @@ header.header {
   top: 10px;
   left: 0;
   right: 0;
-  z-index: 1000; /* Assurer que le header reste au-dessus du contenu */
-  background-color: #f6f3f0;
-  width: 100%; /* Faire en sorte que le header prenne toute la largeur */
+  z-index: 1000; /* Le header reste au-dessus du contenu */
+  background-color: black;
+  width: 100%; /* Le header prend toute la largeur */
+  height: 100%;
 }
 
 /* Taille du logo dans le header et positionnement */
 header.header img {
   max-width: 70px; 
-  margin-left: 30px; /* Décale le logo vers la droite */
+  margin-left: 30px;
 }
 
-/* Navigateur : Positionnement et décalage vers la gauche */
+/* Navigateur : Positionnement */
 .nav ul {
   display: flex;
   list-style: none;
   padding-right: 20px;
   position: absolute; /* Fixe le menu par rapport à la page */
   top: 40px; /* Espacement du menu par rapport au haut */
-
 }
 
 /* Espacement entre les liens du menu */
 .nav li {
-  margin-left: 20px; /* Espacement entre les éléments du menu */
+  margin-left: 20px;
 }
 
 /* Liens de navigation */
@@ -50,7 +58,7 @@ header.header img {
   color: #b8813c;
 }
 
-/* Définir l'animation du titre */
+/* L'animation du titre */
 @keyframes slide-in {
   0% {
     transform: translateY(-100vh) translateX(-50%); /* Hors de l'écran en haut */
@@ -192,6 +200,7 @@ section.about-me {
   font-style: normal; /* Style normal */
   font-size: 100px; /* Taille du texte */
   line-height: 1.5; /* Améliorer l'espacement entre les lignes */
+  
 }
 
 section.about-me p {
@@ -201,7 +210,7 @@ section.about-me p {
   font-size: 16px; /* S'assurer que le texte dans le paragraphe est à la bonne taille */
 }
 
-/* Si tu veux ajouter un peu de style au texte du paragraphe */
+
 section.about-me p {
   max-width: 800px; /* Limiter la largeur du texte */
   margin: 0 auto; /* Centrer le texte dans la section */
@@ -223,7 +232,7 @@ section.about-me p {
 
 /* Style du chiffre 4 */
 .four {
-  font-size: 50px; /* Taille du chiffre */
+  font-size: 80px; /* Taille du chiffre */
   font-weight: bold;
   color: white; /* Couleur du texte en blanc au départ */
   display: flex;
@@ -281,6 +290,7 @@ section.about-me p {
   box-sizing: border-box; /* Inclut le padding dans la largeur de l'élément */
   position: relative; /* Pour le positionnement des images associées */
   margin-left: 120px; /* Décale les liens vers la droite */
+  background-color: black;
 }
 
 /* Partie droite : les images associées */
