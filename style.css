@@ -510,6 +510,7 @@ section.about-me p {
 /* NOUVELLE PAGE DROP  */
 
 /* Container principal */
+/* Styles par défaut */
 .container2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; /* Trois colonnes égales */
@@ -559,11 +560,13 @@ section.about-me p {
   width: 30%; /* Donne à la colonne une largeur de 30% de la page */
   z-index: 10; /* Assure que la colonne reste au-dessus du contenu */
 }
+
 .right-column header {
   text-align: center;
   margin-bottom: 20px; /* Espacement sous le titre */
   width: 100%; /* Pour s'assurer que le titre peut occuper toute la largeur */
 }
+
 /* Le titre (h1) dans la colonne droite */
 .right-column h1 {
   font-family: "Playfair Display", serif;
@@ -611,6 +614,63 @@ section.about-me p {
   line-height: 1; /* Espacement entre les lignes pour améliorer la lisibilité */
   color:#b8813c;
   padding: 3px; /* Un peu d'espacement autour du texte */
+}
+
+/* Media Queries pour rendre le site responsive */
+
+/* Tablettes */
+@media (max-width: 1024px) {
+  .container2 {
+    grid-template-columns: 1fr 1fr; /* Deux colonnes au lieu de trois */
+  }
+
+  .images-large {
+    grid-column: span 1; /* L'image prend seulement une colonne */
+  }
+
+  .right-column {
+    width: 40%; /* Réduire la largeur de la colonne d'informations */
+  }
+}
+
+/* Téléphones */
+@media (max-width: 768px) {
+  .container2 {
+    grid-template-columns: 1fr; /* Une seule colonne */
+    height: auto; /* Hauteur automatique */
+  }
+
+  .images-large {
+    grid-column: span 1; /* L'image prend une seule colonne */
+  }
+
+  .right-column {
+    width: 100%; /* La colonne d'informations prend toute la largeur */
+    position: relative; /* Annuler le positionnement fixe */
+  }
+
+  .right-column h1 {
+    font-size: 30px; /* Réduire la taille du titre */
+  }
+
+  .right-column .info, .right-column .info1 {
+    font-size: 13px; /* Réduire la taille du texte */
+  }
+}
+
+/* Pour les très petits écrans (par exemple, les téléphones très compacts) */
+@media (max-width: 480px) {
+  .right-column {
+    padding: 15px; /* Réduire les espacements internes */
+  }
+
+  .right-column h1 {
+    font-size: 24px; /* Réduire la taille du titre */
+  }
+
+  .right-column .info, .right-column .info1 {
+    font-size: 12px; /* Réduire encore la taille du texte */
+  }
 }
 
 
