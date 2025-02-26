@@ -772,8 +772,6 @@ section.about-me p {
 
 
 
-
-
 /* Container principal */
 .container11 {
   display: grid;
@@ -851,6 +849,77 @@ section.about-me p {
   height: 2px; /* Épaisseur du soulignement */
   background-color:#193324 /* Couleur du soulignement (choisir la couleur que tu veux) */
 }
+
+/* Media Queries pour rendre le site responsive */
+
+/* Tablettes */
+@media (max-width: 1024px) {
+  .container11 {
+    grid-template-columns: 1fr 1fr; /* Deux colonnes au lieu de trois */
+  }
+
+  .images-autre {
+    grid-column: span 1; /* Les images prennent une colonne chacune */
+    flex-direction: column; /* Les images s'empilent verticalement */
+    gap: 20px; /* Espacement entre les images */
+  }
+
+  .image-container11 {
+    margin-right: 0; /* Supprimer l'espacement droit */
+    margin-bottom: 20px; /* Espacement vertical entre les images */
+  }
+
+  .right-column {
+    width: 40%; /* Réduire la largeur de la colonne de droite */
+  }
+}
+
+/* Téléphones */
+@media (max-width: 768px) {
+  .container11 {
+    grid-template-columns: 1fr; /* Une seule colonne sur les téléphones */
+    padding: 10px; /* Réduire le padding */
+  }
+
+  .images-autre {
+    grid-column: span 1; /* Les images prennent toute la largeur */
+    flex-direction: column; /* Les images s'empilent verticalement */
+    gap: 15px; /* Réduire l'espacement */
+  }
+
+  .image-container11 {
+    margin-right: 0; /* Supprimer l'espacement droit */
+    margin-bottom: 15px; /* Espacement vertical */
+  }
+
+  .right-column {
+    width: 100%; /* La colonne prend toute la largeur */
+    position: relative; /* Enlever la position fixe */
+  }
+
+  .right-column header {
+    margin-bottom: 10px; /* Espacement sous le titre */
+  }
+}
+
+/* Très petits écrans (smartphones) */
+@media (max-width: 480px) {
+  .container11 {
+    padding: 5px; /* Réduire encore le padding */
+  }
+
+  .images-autre {
+    grid-column: span 1; /* Toujours une seule colonne */
+    flex-direction: column; /* Les images s'empilent verticalement */
+    gap: 10px; /* Espacement encore plus réduit */
+  }
+
+  .right-column {
+    width: 100%; /* La colonne prend toute la largeur */
+    padding: 15px; /* Ajuster le padding de la colonne */
+  }
+}
+
 
 /* Changer la couleur du titre lors du survol */
 .right-column h1:hover {
