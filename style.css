@@ -231,7 +231,6 @@ header.header img {
     transform: translateY(0); /* Reste à sa position finale */
   }
 }
-
 /* Section contenant le titre (bandeau) */
 section.haut-page {
   background: url('images/fond_degrade.png') no-repeat center center; /* Appliquer l'image de fond */
@@ -241,6 +240,7 @@ section.haut-page {
   justify-content: center; /* Centre horizontalement */
   align-items: flex-start; /* Aligne les éléments du haut vers le haut */
   padding-top: 100px; /* Espacement pour éviter que le titre soit sous le logo */
+  position: relative; /* Assure que les éléments à l'intérieur sont positionnés correctement */
 }
 
 /* Header sans arrière-plan, juste transparent */
@@ -248,7 +248,7 @@ header.header {
   display: flex;
   justify-content: space-between; /* Espacement entre le logo et la navigation */
   align-items: center; /* Centrer verticalement les éléments */
-  padding: 10px; /* Espacement autour du header */
+  padding: 10px;
   position: fixed; /* Position fixe pour garder le header en haut */
   top: 0;
   left: 0;
@@ -337,7 +337,7 @@ header.header img {
   animation: bounce-fade-in 2s ease-out 2s forwards; /* Animation de fondu et rebond, avec un délai de 2s */
 }
 
-
+/* Section about-me */
 section.about-me {
   background-color: black; /* Fond noir */
   color: white; /* Texte en blanc */
@@ -348,7 +348,6 @@ section.about-me {
   font-style: normal; /* Style normal */
   font-size: 100px; /* Taille du texte */
   line-height: 1.5; /* Améliorer l'espacement entre les lignes */
-  
 }
 
 section.about-me p {
@@ -358,13 +357,118 @@ section.about-me p {
   font-size: 16px; /* S'assurer que le texte dans le paragraphe est à la bonne taille */
 }
 
-
+/* Section about-me: Ajuster le texte sur de petits écrans */
 section.about-me p {
   max-width: 800px; /* Limiter la largeur du texte */
   margin: 0 auto; /* Centrer le texte dans la section */
   font-weight: lighter; /* Police plus légère */
   line-height: 1.6; /* Espacement entre les lignes pour plus de lisibilité */
 }
+
+/* Animations */
+@keyframes slide-in {
+  0% {
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes bounce-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media Queries pour rendre la page responsive */
+
+/* Tablettes (max-width: 1024px) */
+@media (max-width: 1024px) {
+  /* Titre et sous-titre */
+  .big-title h1 {
+    font-size: 100px; /* Réduire la taille du titre */
+  }
+
+  .big-title .subtitle {
+    font-size: 24px; /* Réduire la taille du sous-titre */
+  }
+
+  /* Section about-me */
+  section.about-me {
+    font-size: 80px; /* Réduire la taille du texte pour les tablettes */
+  }
+
+  section.about-me p {
+    font-size: 18px; /* Augmenter la taille du texte des paragraphes */
+  }
+
+  .nav ul {
+    top: 50px; /* Ajuster la position du menu */
+  }
+}
+
+/* Téléphones (max-width: 768px) */
+@media (max-width: 768px) {
+  /* Titre */
+  .big-title h1 {
+    font-size: 80px; /* Réduire davantage pour les petits écrans */
+  }
+
+  .big-title .subtitle {
+    font-size: 20px; /* Réduire la taille du sous-titre */
+  }
+
+  /* Section about-me */
+  section.about-me {
+    font-size: 60px; /* Réduire encore la taille du texte pour les téléphones */
+  }
+
+  section.about-me p {
+    font-size: 16px; /* Ajuster la taille du texte des paragraphes */
+  }
+
+  /* Menu */
+  .nav ul {
+    top: 60px; /* Réajuster le positionnement du menu */
+  }
+}
+
+/* Très petits écrans (max-width: 480px) */
+@media (max-width: 480px) {
+  .big-title h1 {
+    font-size: 60px; /* Réduire encore la taille du titre */
+  }
+
+  .big-title .subtitle {
+    font-size: 18px; /* Réduire encore la taille du sous-titre */
+  }
+
+  section.about-me {
+    font-size: 50px; /* Réduire la taille du texte */
+  }
+
+  section.about-me p {
+    font-size: 14px; /* Ajuster la taille du texte pour les petits écrans */
+  }
+
+  /* Menu */
+  .nav ul {
+    top: 70px; /* Réajuster la position du menu */
+  }
+}
+
 
 /* Créer un conteneur pour le chiffre 4 */
 .four-container {
