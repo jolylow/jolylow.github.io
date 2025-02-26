@@ -1,88 +1,89 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&display=swap");
 
+/* Style de la page principale */
 .page-about-me {
-  background-color: black; 
+  background-color: black;
   margin: 0;
   padding: 0;
-  font-family: "Playfair Display", serif; /* Police par défaut */
+  font-family: "Playfair Display", serif;
   text-align: center; /* Centre le texte de la page */
+  color: white; /* Texte blanc par défaut */
 }
 
-
-
-.page-about-me .return-link a {
+/* Style pour le lien retour */
+.return-link a {
   font-size: 20px;
   text-decoration: none;
   color: #b8813c; /* Couleur marron/ocre */
+  display: inline-block;
+  margin-top: 20px; /* Marge supérieure pour le lien retour */
 }
-
-
 
 /* Style pour les liens email et LinkedIn */
 .page-about-me .contact-info {
-  margin-top: 200px; /* Marge pour espacer le contenu principal du haut de la page */
+  margin-top: 200px; /* Espacement du contenu principal du haut de la page */
 }
 
-.page-about-me .email-link, .page-about-me .linkedin-link {
+.page-about-me .email-link,
+.page-about-me .linkedin-link {
   font-size: 20px; /* Taille du texte */
   text-decoration: none;
   font-family: "Playfair Display", serif;
-  color: #b8813c; 
+  color: #b8813c;
   display: block;
-  margin-bottom: 40px; /* Marge sous chaque lien */
+  margin-bottom: 40px; /* Espacement sous chaque lien */
 }
 
-.page-about-me .email-link:hover, .page-about-me .linkedin-link:hover {
+/* Hover pour email et LinkedIn */
+.page-about-me .email-link:hover,
+.page-about-me .linkedin-link:hover {
   text-decoration: underline; /* Sous-lignage au survol */
 }
 
 /* Style pour l'image */
 .page-about-me .about .full-width-image {
   display: block;
-  margin: 30px auto;  /* Centre l'image horizontalement avec une marge autour */
-  width: 80%; /* Rendre l'image plus petite (80% de la largeur de l'écran) */
+  margin: 30px auto;
+  width: 80%; /* Rendre l'image plus petite */
   height: auto;  /* Maintient les proportions de l'image */
 }
-
 
 /* Style pour le lien retour */
 .return-link {
   text-align: center;
   font-family: "Playfair Display", serif;
   margin-top: 30px;
-  top: 40px; /* Espacement du menu par rapport au haut */
-  
 }
 
 .return-link a {
   font-size: 20px;
   text-decoration: none;
-  color: white; /* Couleur bleue */
+  color: white; /* Lien en couleur blanche */
 }
 
+/* Effet de survol pour le lien retour */
 .return-link a:hover {
-  text-decoration: none; /* Lien avec effet au survol */
-  color: #b8813c;
+  color: #b8813c; /* Changer la couleur du lien au survol */
+  text-decoration: underline;
 }
 
-/* Style pour l'image */
+/* Style pour l'image de la section "About" */
 .about .full-width-image {
   display: block;
-  margin: 30px auto;  /* Centre l'image horizontalement avec une marge autour */
-  width: 80%; /* Rendre l'image plus petite (50% de la largeur de l'écran) */
-  height: auto;  /* Maintenir les proportions de l'image */
-  margin-top: 100px;
+  margin: 30px auto;
+  width: 80%; /* Limiter la largeur de l'image à 80% */
+  height: auto;
+  margin-top: 100px; /* Espacement du top pour la section "About" */
 }
 
-
-
-
+/* Style général du body */
 body {
   background-color: black; /* Fond noir sur toute la page */
   margin: 0;
   padding: 0;
-  height: 100%; /* le body occupe toute la hauteur de la fenêtre */
+  height: 100%; /* Le body occupe toute la hauteur de la fenêtre */
+  font-family: "Playfair Display", serif;
 }
 
 /* Header : logo et navigation */
@@ -97,13 +98,12 @@ header.header {
   right: 0;
   z-index: 1000; /* Le header reste au-dessus du contenu */
   background-color: black;
-  width: 100%; /* Le header prend toute la largeur */
-  height: 100%;
+  width: 100%;
 }
 
 /* Taille du logo dans le header et positionnement */
 header.header img {
-  max-width: 70px; 
+  max-width: 70px;
   margin-left: 30px;
 }
 
@@ -123,16 +123,88 @@ header.header img {
 
 /* Liens de navigation */
 .nav li a {
-  color: black;
+  color: white; /* Liens en blanc */
   font-family: "Playfair Display", serif;
   font-size: 20px;
   text-decoration: none;
+  transition: color 0.3s ease; /* Transition fluide pour le changement de couleur */
 }
 
 /* Effet au survol des liens */
 .nav li a:hover {
-  color: #b8813c;
+  color: #b8813c; /* Couleur marron/ocre au survol */
 }
+
+/* Media Queries pour rendre la page responsive */
+
+/* Tablettes (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .page-about-me .email-link, 
+  .page-about-me .linkedin-link {
+    font-size: 18px; /* Réduire légèrement la taille du texte */
+  }
+
+  header.header {
+    padding: 20px; /* Plus de padding pour un header plus aéré */
+  }
+
+  .nav ul {
+    top: 50px; /* Ajuster l'espacement du menu pour les tablettes */
+  }
+
+  .return-link a {
+    font-size: 18px; /* Réduire légèrement la taille du texte */
+  }
+
+  .about .full-width-image {
+    width: 70%; /* Réduire la taille de l'image */
+  }
+}
+
+/* Téléphones (max-width: 768px) */
+@media (max-width: 768px) {
+  .page-about-me .email-link, 
+  .page-about-me .linkedin-link {
+    font-size: 16px; /* Réduire encore la taille du texte */
+  }
+
+  .nav ul {
+    top: 60px; /* Espacement ajusté pour les petits écrans */
+  }
+
+  .return-link a {
+    font-size: 16px; /* Réduire la taille du texte pour les petits écrans */
+  }
+
+  .about .full-width-image {
+    width: 90%; /* Rendre l'image encore plus petite */
+  }
+}
+
+/* Très petits écrans (max-width: 480px) */
+@media (max-width: 480px) {
+  .page-about-me .email-link, 
+  .page-about-me .linkedin-link {
+    font-size: 14px; /* Taille réduite pour les très petits écrans */
+  }
+
+  header.header {
+    padding: 15px; /* Réduire le padding pour le header */
+  }
+
+  .nav ul {
+    top: 70px; /* Ajuster l'espacement du menu */
+  }
+
+  .return-link a {
+    font-size: 14px; /* Taille réduite pour les très petits écrans */
+  }
+
+  .about .full-width-image {
+    width: 100%; /* L'image prend toute la largeur de l'écran */
+  }
+}
+
 
 /* L'animation du titre */
 @keyframes slide-in {
@@ -347,6 +419,16 @@ section.about-me p {
     color:  #193324; /* Retour à blanc à la fin de la rotation */
   }
 }
+
+
+
+
+
+
+
+
+
+
 /* Styles par défaut */
 .container {
   background-color: black; /* Fond noir */
@@ -921,7 +1003,7 @@ section.about-me p {
 }
 
 
-//* Titre principal (h1) dans la colonne droite */
+/* Titre principal (h1) dans la colonne droite */
 .right-column h1 {
   font-family: "Playfair Display", serif;
   font-size: 50px;
@@ -1007,243 +1089,6 @@ section.about-me p {
     padding: 2px; /* Réduire l'espacement autour du texte */
   }
 }
-
-
-
-
-
-
-
-
-/* h4{
-  font-family: "normalidad-compact", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    margin: 50px;
-    font-size: 60px;
-    color: black;
-    }
-
-    
-p{
-  font-family:'Aktiv grotesk';
-    font-weight: 200;
-    font-style: normal;
-    font-size: 16px;
-    color: black;
-  } */
-
-
-/* Fond  */
-
-/* .slider{
-    width: 100%;
-    min-height: 50vh;
-    aspect-ratio: auto;
-    background: rgb(0, 0, 0);
-    }
-
-.slider-background{
-    width: 100%;
-    height:65%;
-    object-fit: cover;
-    }
-   */
-
-
-
-
-
-
- /* Présentation projets accueil */
-
-/* .projects {
-    grid-template-columns: 1fr;
-    gap: 30px;
-    display: grid;
-    position: relative;
-    align-items:baseline ;
-    padding: 10px; 
-    transition: 1s;
-    margin:10px ;
-    }
-
-.projects a:hover img{
-    transform:scale(0.9);
-    filter:opacity(60%);
-    } */ 
-
-/* .projects img{
-    margin: 30px;
-    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
-    } */
-
-
-
-/* Pages projets
-
-.titre{
-    margin-bottom: 30px;
-    border-bottom: 2px solid #0033ff;
-    max-width: 800px;
-    }
-
-p.contenu{
-    font-size: 15px;
-    font-weight: 400;
-    max-width: 600px;
-    margin-bottom: 30px;
-    padding-left: 50px;
-    } */
- */
-
-
-/* Grid images */    
-/* .grid-photo{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 60px;
-    justify-items: center;
-    align-items:center;
-    padding: 50px;
-    margin-bottom:200px;
-    max-width: 2000px;
-    }
-
-.grid-photo img {
-    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
-    } */
-
-
-
-
-
-/* 
-.grid-beatmakers{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 60px;
-    justify-items: center;
-    align-items:center;
-    padding: 50px;
-    margin-bottom:200px;
-    max-width: 2000px;
-    }
- 
-        
-
-.grid-about{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap:0px;
-    justify-items: left;
-    align-items:baseline;
-    padding: 0px;
-    margin-bottom:200px;
-    max-width: 1000px;
-    margin-right:100px;
-    }
-
-    
-
-.grid-about img {
-    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
-    display: grid;
-    }
-
-.grid-fanzine{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap:0px;
-    justify-items: left;
-    align-items:baseline;
-    padding: 0px;
-     margin-bottom:200px;
-    max-width: 1000px;
-    margin-right:100px;
-    } */
-
-
-
-
-  /* img{
-    max-width: 100%;
-    height: auto;
-        display: block;
-       } */
-
-
-/* @media (min-width:640px){
-  .projects{
-    grid-template-columns: 1fr 1fr 1fr;
-    }
-
-  .grid-photo{
-    grid-template-columns: 1fr 1fr;
-    }
-
-  .grid-glyphs{
-    grid-template-columns: 1fr;
-    }
- 
-  .grid-herbier{
-    grid-template-columns: 1fr;
-    }
-
-  .grid-beatmakers{
-    grid-template-columns: 1fr;
-    }
-
-  .grid-about{
-    grid-template-columns: 1fr 1fr;
-    }
-
-  .bandeau{
-    grid-template-columns:3fr 1fr 1fr 1fr;
-  }  
-    }
-
-  @media (min-width:640px){
-  h1 {
-    font-size: 100px;
-    }
-
-
-
-  h3 {
-    font-size: 30px;
-    }
-
-  h4 {
-    font-size: 50px;
-    }
-  p {
-    font-size: 50px;
-    }
-
-
-  }  */
-
-
-/* Responsivité pour les petits écrans */
-/* @media (max-width: 768px) {
-  .big-title h1 {
-    font-size: 80px; /* Réduit la taille du titre sur les tablettes */
-  /* }
-}
-
-@media (max-width: 480px) {
-  .big-title h1 {
-    font-size: 40px; /* Encore plus petit sur les écrans très petits */
-  /* }
-} */
-
-  
-  
-
-
-
-
 
 
 
