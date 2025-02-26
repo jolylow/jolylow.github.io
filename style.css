@@ -921,15 +921,15 @@ section.about-me p {
 }
 
 
-/* Changer la couleur du titre lors du survol */
-.right-column h1:hover {
-  color: #ff6347; /* Couleur du titre lors du survol (tomato) */
-}
-
+//* Titre principal (h1) dans la colonne droite */
 .right-column h1 {
   font-family: "Playfair Display", serif;
   font-size: 50px;
   color: white;
+  margin-bottom: 20px; /* Espacement sous le titre */
+  text-align: center; /* Centrer le titre */
+  line-height: 1.3; /* Espacement entre les lignes */
+  padding: 0 10px; /* Un peu de padding pour que le titre ne touche pas les bords */
 }
 
 /* Contenu de la colonne d'informations */
@@ -938,17 +938,76 @@ section.about-me p {
   font-family: "Playfair Display", serif;
   line-height: 1.5; /* Espacement entre les lignes pour améliorer la lisibilité */
   color: #666;
-  padding: 3px; /* Un peu d'espacement autour du texte */
+  padding: 5px; /* Un peu d'espacement autour du texte */
+  text-align: justify; /* Justifier le texte pour une meilleure lecture */
 }
 
-/* Contenu de la colonne d'informations */
+/* Contenu de la colonne d'informations (info1) */
 .right-column .info1 {
   font-size: 15px; /* Taille du texte en rem pour plus de flexibilité */
   font-family: "Playfair Display", serif;
-  line-height: 1; /* Espacement entre les lignes pour améliorer la lisibilité */
-  color:#b8813c;
-  padding: 3px; /* Un peu d'espacement autour du texte */
+  line-height: 1.5; /* Espacement entre les lignes pour améliorer la lisibilité */
+  color: #b8813c;
+  padding: 5px; /* Un peu d'espacement autour du texte */
+  text-align: justify; /* Justifier le texte pour une meilleure lecture */
 }
+
+/* Media Queries pour rendre le texte responsive */
+
+/* Tablettes */
+@media (max-width: 1024px) {
+  .right-column h1 {
+    font-size: 40px; /* Réduire la taille du titre */
+    margin-bottom: 15px; /* Réduire l'espacement sous le titre */
+  }
+
+  .right-column .info {
+    font-size: 14px; /* Réduire la taille du texte */
+    padding: 4px; /* Réduire l'espacement autour du texte */
+  }
+
+  .right-column .info1 {
+    font-size: 14px; /* Réduire la taille du texte */
+    padding: 4px; /* Réduire l'espacement autour du texte */
+  }
+}
+
+/* Téléphones */
+@media (max-width: 768px) {
+  .right-column h1 {
+    font-size: 30px; /* Réduire davantage la taille du titre */
+    margin-bottom: 10px; /* Réduire l'espacement sous le titre */
+  }
+
+  .right-column .info {
+    font-size: 13px; /* Réduire la taille du texte */
+    padding: 3px; /* Réduire l'espacement autour du texte */
+  }
+
+  .right-column .info1 {
+    font-size: 13px; /* Réduire la taille du texte */
+    padding: 3px; /* Réduire l'espacement autour du texte */
+  }
+}
+
+/* Très petits écrans (smartphones) */
+@media (max-width: 480px) {
+  .right-column h1 {
+    font-size: 24px; /* Réduire la taille du titre pour les petits écrans */
+    margin-bottom: 8px; /* Espacement plus réduit sous le titre */
+  }
+
+  .right-column .info {
+    font-size: 12px; /* Réduire la taille du texte */
+    padding: 2px; /* Réduire l'espacement autour du texte */
+  }
+
+  .right-column .info1 {
+    font-size: 12px; /* Réduire la taille du texte */
+    padding: 2px; /* Réduire l'espacement autour du texte */
+  }
+}
+
 
 
 
@@ -1057,29 +1116,6 @@ p.contenu{
 
 
 
-.grid-glyphs{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 60px;
-    justify-items: center;
-    align-items:center;
-    padding: 50px;
-    margin-bottom:200px;
-    max-width: 2000px;
-    }
-
-
-
-.grid-herbier{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 60px;
-    justify-items: center;
-    align-items:center;
-    padding: 50px;
-    margin-bottom:200px;
-    max-width: 2000px;
-    }
 
 
 /* 
