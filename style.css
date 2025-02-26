@@ -347,7 +347,7 @@ section.about-me p {
     color:  #193324; /* Retour à blanc à la fin de la rotation */
   }
 }
-
+/* Styles par défaut */
 .container {
   background-color: black; /* Fond noir */
   display: grid;
@@ -450,6 +450,59 @@ section.about-me p {
   content: ""; /* Aucun texte par défaut */
   opacity: 0;
 }
+
+/* Media Queries pour rendre le site responsive */
+
+/* Tablettes */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr; /* Une seule colonne */
+    height: auto; /* Hauteur automatique */
+  }
+
+  .grid-left {
+    margin-left: 0; /* Annuler le décalage */
+    padding: 10px; /* Réduire les espacements */
+  }
+
+  .grid-right {
+    padding: 10px; /* Réduire les espacements */
+  }
+
+  .menu-link {
+    font-size: 14px; /* Réduire la taille des liens */
+  }
+
+  .menu-item .image {
+    max-width: 300px; /* Réduire la taille des images */
+  }
+}
+
+/* Téléphones */
+@media (max-width: 480px) {
+  .container {
+    grid-template-columns: 1fr; /* Une seule colonne */
+  }
+
+  .grid-left {
+    margin-left: 0; /* Annuler le décalage */
+    padding: 5px; /* Réduire les espacements */
+  }
+
+  .grid-right {
+    padding: 5px; /* Réduire les espacements */
+  }
+
+  .menu-link {
+    font-size: 12px; /* Réduire encore la taille des liens */
+  }
+
+  .menu-item .image {
+    max-width: 200px; /* Réduire encore la taille des images */
+  }
+}
+
+
 
 
 
