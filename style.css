@@ -5,158 +5,106 @@
   background-color: black; 
   margin: 0;
   padding: 0;
-  font-family: "Playfair Display", serif;
-  text-align: center;
+  font-family: "Playfair Display", serif; /* Police par défaut */
+  text-align: center; /* Centre le texte de la page */
 }
+
+
 
 .page-about-me .return-link a {
   font-size: 20px;
   text-decoration: none;
-  color: #b8813c;
+  color: #b8813c; /* Couleur marron/ocre */
 }
+
+
 
 /* Style pour les liens email et LinkedIn */
 .page-about-me .contact-info {
-  margin-top: 200px;
+  margin-top: 200px; /* Marge pour espacer le contenu principal du haut de la page */
 }
 
 .page-about-me .email-link, .page-about-me .linkedin-link {
-  font-size: 20px;
+  font-size: 20px; /* Taille du texte */
   text-decoration: none;
   font-family: "Playfair Display", serif;
   color: #b8813c; 
   display: block;
-  margin-bottom: 40px;
+  margin-bottom: 40px; /* Marge sous chaque lien */
 }
 
 .page-about-me .email-link:hover, .page-about-me .linkedin-link:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* Sous-lignage au survol */
 }
 
 /* Style pour l'image */
 .page-about-me .about .full-width-image {
   display: block;
-  margin: 30px auto;
+  margin: 30px auto;  /* Centre l'image horizontalement avec une marge autour */
   width: 80%; /* Rendre l'image plus petite (80% de la largeur de l'écran) */
-  height: auto;
+  height: auto;  /* Maintient les proportions de l'image */
 }
 
+
+/* Style pour le lien retour */
 .return-link {
   text-align: center;
   font-family: "Playfair Display", serif;
   margin-top: 30px;
-  top: 40px;
+  top: 40px; /* Espacement du menu par rapport au haut */
+  
 }
 
 .return-link a {
   font-size: 20px;
   text-decoration: none;
-  color: white;
+  color: white; /* Couleur bleue */
 }
 
 .return-link a:hover {
-  text-decoration: none;
+  text-decoration: none; /* Lien avec effet au survol */
   color: #b8813c;
 }
 
 /* Style pour l'image */
 .about .full-width-image {
   display: block;
-  margin: 30px auto;
-  width: 80%;
-  height: auto;
+  margin: 30px auto;  /* Centre l'image horizontalement avec une marge autour */
+  width: 80%; /* Rendre l'image plus petite (50% de la largeur de l'écran) */
+  height: auto;  /* Maintenir les proportions de l'image */
   margin-top: 100px;
 }
 
+
+
+
 body {
-  background-color: black;
+  background-color: black; /* Fond noir sur toute la page */
   margin: 0;
   padding: 0;
-  height: 100%;
+  height: 100%; /* le body occupe toute la hauteur de la fenêtre */
 }
 
 /* Header : logo et navigation */
 header.header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-between; /* Espacement entre le logo et la navigation */
+  align-items: center; /* Centrer verticalement les éléments */
   padding: 10px;
   position: fixed;
   top: 10px;
   left: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 1000; /* Le header reste au-dessus du contenu */
   background-color: black;
-  width: 100%;
+  width: 100%; /* Le header prend toute la largeur */
   height: 100%;
 }
 
 /* Taille du logo dans le header et positionnement */
 header.header img {
-  max-width: 70px;
+  max-width: 70px; 
   margin-left: 30px;
-}
-
-/* Media Queries */
-
-/* Pour les écrans plus petits que 768px (tablettes, smartphones) */
-@media (max-width: 768px) {
-
-  .page-about-me .return-link a {
-    font-size: 18px; /* Réduire la taille du texte des liens */
-  }
-
-  .page-about-me .email-link, .page-about-me .linkedin-link {
-    font-size: 18px; /* Réduire la taille du texte des liens */
-  }
-
-  .page-about-me .about .full-width-image {
-    width: 90%; /* Réduire l'image à 90% de la largeur de l'écran */
-  }
-
-  header.header {
-    flex-direction: column; /* Aligner logo et navigation verticalement sur petit écran */
-    padding: 20px; /* Ajouter un peu plus d'espace */
-  }
-
-  header.header img {
-    max-width: 50px; /* Réduire la taille du logo */
-  }
-
-  /* Optionnel: réduire la marge des éléments pour gagner de l'espace */
-  .page-about-me .contact-info {
-    margin-top: 100px;
-  }
-
-  .return-link {
-    margin-top: 20px;
-  }
-
-}
-
-/* Pour les écrans encore plus petits, comme les smartphones en portrait */
-@media (max-width: 480px) {
-
-  .page-about-me .return-link a {
-    font-size: 16px; /* Taille du texte encore plus petite */
-  }
-
-  .page-about-me .email-link, .page-about-me .linkedin-link {
-    font-size: 16px; /* Réduire encore la taille des liens */
-  }
-
-  .page-about-me .about .full-width-image {
-    width: 100%; /* L'image prend toute la largeur de l'écran */
-  }
-
-  header.header {
-    flex-direction: column;
-    padding: 15px;
-  }
-
-  header.header img {
-    max-width: 40px; /* Encore plus petit pour un écran vraiment étroit */
-  }
 }
 
 /* Navigateur : Positionnement */
@@ -164,8 +112,8 @@ header.header img {
   display: flex;
   list-style: none;
   padding-right: 20px;
-  position: absolute;
-  top: 40px;
+  position: absolute; /* Fixe le menu par rapport à la page */
+  top: 40px; /* Espacement du menu par rapport au haut */
 }
 
 /* Espacement entre les liens du menu */
@@ -189,54 +137,54 @@ header.header img {
 /* L'animation du titre */
 @keyframes slide-in {
   0% {
-    transform: translateY(-100vh) translateX(-50%);
+    transform: translateY(-100vh) translateX(-50%); /* Hors de l'écran en haut */
   }
   100% {
-    transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%); /* Centre le titre à la fois verticalement et horizontalement */
   }
 }
 
 /* Animation du sous-titre (fondu et rebond) */
 @keyframes bounce-fade-in {
   0% {
-    opacity: 0;
-    transform: translateY(30px);
+    opacity: 0; /* Commence invisible */
+    transform: translateY(30px); /* Commence plus bas */
   }
   50% {
-    opacity: 1;
-    transform: translateY(-10px);
+    opacity: 1; /* Devient visible */
+    transform: translateY(-10px); /* Rebond vers le haut */
   }
   100% {
-    opacity: 1;
-    transform: translateY(0);
+    opacity: 1; /* Reste visible */
+    transform: translateY(0); /* Reste à sa position finale */
   }
 }
 
 /* Section contenant le titre (bandeau) */
 section.haut-page {
-  background: url('images/fond_degrade.png') no-repeat center center;
-  background-size: cover;
-  height: 80vh;
+  background: url('images/fond_degrade.png') no-repeat center center; /* Appliquer l'image de fond */
+  background-size: cover; /* Couvre toute la section */
+  height: 80vh; /* La section prend toute la hauteur de la fenêtre */
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding-top: 100px;
+  justify-content: center; /* Centre horizontalement */
+  align-items: flex-start; /* Aligne les éléments du haut vers le haut */
+  padding-top: 100px; /* Espacement pour éviter que le titre soit sous le logo */
 }
 
-/* Header sans arrière-plan */
+/* Header sans arrière-plan, juste transparent */
 header.header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  position: fixed;
+  justify-content: space-between; /* Espacement entre le logo et la navigation */
+  align-items: center; /* Centrer verticalement les éléments */
+  padding: 10px; /* Espacement autour du header */
+  position: fixed; /* Position fixe pour garder le header en haut */
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000;
-  background-color: transparent;
-  width: 100%;
-  height: 100px;
+  z-index: 1000; /* Assurer que le header reste au-dessus du contenu */
+  background-color: transparent; /* Pas de fond dans le header */
+  width: 100%; /* Faire en sorte que le header prenne toute la largeur */
+  height: 100px; /* Hauteur du header */
 }
 
 /* Taille du logo dans le header */
@@ -249,15 +197,15 @@ header.header img {
   display: flex;
   list-style: none;
   padding-right: 50px;
-  position: absolute;
-  top: 40px;
-  right: 30px;
-  margin: 0;
+  position: absolute; /* Fixe le menu par rapport à la page */
+  top: 40px; /* Espacement du menu par rapport au haut */
+  right: 30px; /* Décale un peu le menu à gauche */
+  margin: 0; /* Assure qu'il n'y a pas de marges supplémentaires */
 }
 
 /* Espacement entre les liens du menu */
 .nav li {
-  margin-left: 60px;
+  margin-left: 60px; /* Espacement entre les éléments du menu */
 }
 
 /* Liens de navigation */
@@ -277,199 +225,113 @@ header.header img {
 .big-title {
   text-align: center;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  animation: slide-in 2s ease-out forwards;
-  white-space: nowrap;
+  top: 50%; /* Centré verticalement */
+  left: 50%; /* Centré horizontalement */
+  transform: translate(-50%, -50%); /* Centre précisément le titre */
+  animation: slide-in 2s ease-out forwards; /* Applique l'animation du titre */
+  white-space: nowrap; /* Assure que le titre reste sur une seule ligne */
 }
 
 /* Taille et style du titre Portfolio */
 .big-title h1 {
   color: #f7ba6a;
-  font-size: 150px;
+  font-size: 150px; /* Taille ajustée pour un grand titre */
   font-family: "Playfair Display", serif;
   margin: 0;
   padding: 10px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre portée pour améliorer la lisibilité */
 }
 
 /* Changer la couleur du titre au survol */
 .big-title h1:hover {
-  color: #193324;
+  color: #193324; /* Changer la couleur du texte lors du survol */
 }
 
-/* Style pour le texte sous le titre */
+/* Style pour le texte sous le titre (plus grand, en orange et avec un cercle plus large) */
 .big-title .subtitle {
-  display: block;
-  font-size: 30px;
-  color:white;
+  display: block; /* Assure que le texte est sur une nouvelle ligne */
+  font-size: 30px; /* Augmente la taille du texte */
+  color:white; /* Couleur du texte */
   font-family: "Playfair Display", serif;
-  margin-top: 10px;
-  padding: 15px 30px;
-  border: 1px solid #193324;
-  border-radius: 50%;
-  width: fit-content;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  opacity: 0;
-  animation: bounce-fade-in 2s ease-out 2s forwards;
+  margin-top: 10px; /* Un peu d'espacement entre le titre et le sous-titre */
+  padding: 15px 30px; /* Augmente le padding pour un cercle plus large */
+  border: 1px solid #193324; /* Contour noir plus fin */
+  border-radius: 50%; /* Bord arrondi pour créer un cercle */
+  width: fit-content; /* Adapte la largeur au contenu du texte */
+  text-align: center; /* Centrer le texte à l’intérieur du cercle */
+  margin-left: auto; /* Centrage horizontal */
+  margin-right: auto; /* Centrage horizontal */
+  opacity: 0; /* Commence invisible */
+  animation: bounce-fade-in 2s ease-out 2s forwards; /* Animation de fondu et rebond, avec un délai de 2s */
 }
+
 
 section.about-me {
-  background-color: black;
-  color: white;
-  padding: 50px 20px;
-  text-align: center;
-  font-family: "PT Serif", serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 100px;
-  line-height: 1.5;
+  background-color: black; /* Fond noir */
+  color: white; /* Texte en blanc */
+  padding: 50px 20px; /* Espacement autour du texte */
+  text-align: center; /* Centrer le texte horizontalement */
+  font-family: "PT Serif", serif; /* Police du texte */
+  font-weight: 700; /* Poids du texte */
+  font-style: normal; /* Style normal */
+  font-size: 100px; /* Taille du texte */
+  line-height: 1.5; /* Améliorer l'espacement entre les lignes */
+  
 }
 
 section.about-me p {
-  max-width: 700px;
-  margin: 0 auto;
-  font-weight: lighter;
-  font-size: 16px;
+  max-width: 700px; /* Limite la largeur pour ne pas avoir du texte trop long */
+  margin: 0 auto; /* Centre le texte */
+  font-weight: lighter; /* Police plus légère */
+  font-size: 16px; /* S'assurer que le texte dans le paragraphe est à la bonne taille */
 }
 
+
 section.about-me p {
-  max-width: 800px;
-  margin: 0 auto;
-  font-weight: lighter;
-  line-height: 1.6;
+  max-width: 800px; /* Limiter la largeur du texte */
+  margin: 0 auto; /* Centrer le texte dans la section */
+  font-weight: lighter; /* Police plus légère */
+  line-height: 1.6; /* Espacement entre les lignes pour plus de lisibilité */
 }
 
 /* Créer un conteneur pour le chiffre 4 */
 .four-container {
   background-color: black;
   font-family: "Playfair Display", serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 15vh;
-  perspective: 600px;
+  display: flex; /* Utiliser Flexbox pour aligner le chiffre sur la même ligne */
+  justify-content: center; /* Centrer horizontalement */
+  align-items: center; /* Centrer verticalement */
+  width: 100%; /* Prendre toute la largeur disponible */
+  height: 15vh; /* Prendre toute la hauteur de la fenêtre */
+  perspective: 600px; /* Donner une perspective 3D */
 }
 
-/* Media Queries */
-
-/* Pour les écrans plus petits que 768px (tablettes, smartphones) */
-@media (max-width: 768px) {
-
-  header.header {
-    padding: 20px;
-  }
-
-  header.header img {
-    max-width: 80px; /* Réduire la taille du logo */
-  }
-
-  /* Menu de navigation */
-  .nav ul {
-    top: 70px; /* Ajuster la position du menu */
-    right: 20px; /* Espacer le menu du bord droit */
-    padding-right: 20px;
-  }
-
-  .nav li {
-    margin-left: 15px; /* Espacement entre les liens réduit */
-  }
-
-  .nav li a {
-    font-size: 18px; /* Réduire la taille du texte des liens */
-  }
-
-  .big-title h1 {
-    font-size: 80px; /* Réduire la taille du titre sur petits écrans */
-  }
-
-  .big-title .subtitle {
-    font-size: 24px; /* Réduire la taille du sous-titre */
-    padding: 10px 20px;
-  }
-
-  section.about-me {
-    font-size: 50px; /* Réduire la taille du texte dans la section */
-    padding: 30px 20px;
-  }
-
-  section.about-me p {
-    font-size: 14px; /* Réduire la taille du texte du paragraphe */
-  }
-}
-
-/* Pour les écrans plus petits que 480px (smartphones en portrait) */
-@media (max-width: 480px) {
-
-  header.header img {
-    max-width: 60px; /* Réduire encore la taille du logo */
-  }
-
-  .nav ul {
-    top: 80px; /* Ajuster la position du menu */
-    right: 10px;
-  }
-
-  .nav li {
-    margin-left: 10px; /* Réduire l'espacement entre les liens */
-  }
-
-  .nav li a {
-    font-size: 16px; /* Réduire la taille du texte des liens */
-  }
-
-  .big-title h1 {
-    font-size: 50px; /* Réduire la taille du titre */
-  }
-
-  .big-title .subtitle {
-    font-size: 20px;
-    padding: 8px 15px;
-  }
-
-  section.about-me {
-    font-size: 40px; /* Réduire la taille du texte dans la section */
-    padding: 20px 10px;
-  }
-
-  section.about-me p {
-    font-size: 14px; /* Réduire encore la taille du texte du paragraphe */
-  }
-
-  .four-container {
-    height: 10vh; /* Ajuster la hauteur du conteneur */
-  }
-}
-/* Style du chiffre 4 (avec animation) */
+/* Style du chiffre 4 */
 .four {
-  font-size: 80px; /* Taille du chiffre 4 */
+  font-size: 80px; /* Taille du chiffre */
   font-weight: bold;
-  color: white; /* Couleur du chiffre initiale (blanc) */
+  color: white; /* Couleur du texte en blanc au départ */
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100px; /* Largeur du carré */
-  height: 100px; /* Hauteur du carré */
-  background-color: black; /* Fond noir pour le carré */
-  border-radius: 10px; /* Coins arrondis pour l'esthétique */
+  width: 100px;
+  height: 100px;
+  background-color: black; /* Fond noir */
+  border-radius: 10px; /* Coins arrondis pour le style */
   text-align: center;
-  animation: rotate-3d 5s infinite linear, color-change 5s infinite linear; /* Applique les animations de rotation et de changement de couleur */
+  animation: rotate-3d 5s infinite linear, color-change 5s infinite linear; /* Appliquer les deux animations */
 }
 
-/* Animation de rotation 3D du chiffre 4 */
+/* Animation de rotation en 3D */
 @keyframes rotate-3d {
   0% {
-    transform: rotateY(0deg); /* Initialisation de la rotation à 0° */
+    transform: rotateY(0deg); /* Début de la rotation (face normale) */
   }
   50% {
-    transform: rotateY(180deg); /* Rotation à 180° pour inverser le chiffre */
+    transform: rotateY(180deg); /* Rotation à 180° (inverser la face) */
   }
   100% {
-    transform: rotateY(360deg); /* Retour à la rotation complète (360°) */
+    transform: rotateY(360deg); /* Retour à 360° (fin de la rotation complète) */
   }
 }
 
@@ -479,266 +341,227 @@ section.about-me p {
     color: #193324; /* Couleur initiale (blanc) */
   }
   50% {
-    color: #b8813c; /* Couleur orange au milieu de la rotation */
+    color: #b8813c; /* Changer la couleur à l'orange au milieu de la rotation */
   }
   100% {
-    color: #193324; /* Retour à la couleur initiale (blanc) */
+    color:  #193324; /* Retour à blanc à la fin de la rotation */
   }
 }
 
-/* Conteneur pour la mise en page des éléments */
 .container {
-  background-color: black; /* Fond noir pour l'ensemble du conteneur */
-  display: grid; /* Utilisation de la grille CSS */
-  grid-template-columns: 50% 50%; /* Deux colonnes égales : une pour les liens, l'autre pour les images */
-  height: 100vh; /* Hauteur de la fenêtre */
-  width: 100%; /* Largeur pleine */
+  background-color: black; /* Fond noir */
+  display: grid;
+  grid-template-columns: 50% 50%; /* 50% pour la partie gauche (liens) et 50% pour la partie droite (images) */
+  height: 100vh; /* Occupe toute la hauteur de la fenêtre */
+  width: 100%; /* Occupe toute la largeur de la fenêtre */
 }
 
-/* Partie gauche (liens) */
+/* Partie gauche : les liens */
 .grid-left {
   display: flex;
-  flex-direction: column; /* Empilement vertical des liens */
+  flex-direction: column; /* Les liens sont empilés verticalement */
   gap: 20px; /* Espacement entre les liens */
-  padding: 20px; /* Padding autour des liens */
-  width: 100%;
-  box-sizing: border-box;
-  position: relative; /* Permet de positionner les images à côté des liens */
+  padding: 20px; /* Espacement autour des liens */
+  width: 100%; /* La grille prend toute la largeur de sa portion (50%) */
+  box-sizing: border-box; /* Inclut le padding dans la largeur de l'élément */
+  position: relative; /* Pour le positionnement des images associées */
   margin-left: 120px; /* Décale les liens vers la droite */
-  background-color: black; /* Fond noir pour la colonne gauche */
+  background-color: black;
 }
 
-/* Partie droite (images associées) */
+/* Partie droite : les images associées */
 .grid-right {
   display: flex;
-  flex-direction: column; /* Empilement vertical des images */
+  flex-direction: column; /* Les images sont empilées verticalement */
   gap: 20px;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  overflow-y: auto; /* Permet le défilement vertical si nécessaire */
+  overflow-y: auto; /* Permet de scroller si le contenu dépasse la hauteur */
 }
 
-/* Chaque lien avec son image associée */
+/* Partie gauche : chaque lien avec son image associée */
 .menu-item {
-  position: relative; /* Permet de placer l'image et le texte correctement */
+  position: relative; /* Permet de positionner l'image et le texte entre le lien et l'image */
   display: flex;
-  align-items: center; /* Centre les éléments (texte + image) */
+  align-items: center; /* Aligner le lien et le texte au centre */
 }
 
-/* Liens dans le menu */
+/* Liens */
 .menu-link {
-  color: white; /* Texte blanc pour les liens */
+  color: white;
   text-decoration: none;
   font-family: "PT Serif", serif; /* Police du texte */
-  font-weight: 500; /* Poids normal pour les liens */
+  font-weight: 500; /* Poids du texte */
+  font-style: normal; /* Style normal */
   font-size: 16px;
   padding: 10px;
-  transition: 0.3s; /* Transition douce pour les effets */
-  border-bottom: 1px solid #b8813c; /* Ligne de séparation sous les liens */
-  position: relative; /* Pour permettre de positionner le texte et l'image par-dessus */
+  transition: 0.3s;
+  border-bottom: 1px solid #b8813c;
+  position: relative; /* Pour positionner le texte au-dessus du lien */
 }
 
-/* Effet au survol d'un lien */
+/* Assurer que les liens changent de couleur et se réduisent au survol */
 .menu-link:hover {
-  color: white; /* La couleur reste blanche */
-  transform: scale(1.1); /* Légère agrandissement au survol */
-  font-size: 18px; /* Augmentation de la taille du texte */
+  color: white; /* Changer la couleur du lien */
+  transform: scale(1.1); /* Agrandir légèrement le lien */
+  font-size: 18px; /* Réduire la taille du texte */
 }
 
-/* Image qui apparaît au survol du lien */
+/* Image associée au lien (positionnement à droite du lien) */
 .menu-item .image {
-  position: absolute; /* Positionnement absolu pour placer l'image précisément */
-  top: 0; /* Aligne l'image avec le haut du lien */
-  left: 100%; /* L'image se place juste après le lien */
-  margin-left: 10px; /* Un petit espacement entre le lien et l'image */
+  position: absolute; /* Placer l'image à un endroit précis */
+  top: 0; /* Garde l'image alignée en haut du lien */
+  left: 100%; /* Positionner l'image juste à droite du lien */
+  margin-left: 10px; /* Ajouter un petit espacement entre le lien et l'image */
   width: 100%;
-  max-width: 400px; /* Limite la taille de l'image */
-  opacity: 0; /* L'image est cachée au départ */
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Transition douce pour l'effet de fondu et de déplacement */
+  max-width: 400px; /* Limiter la taille de l'image */
+  opacity: 0; /* Masquer l'image au départ */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Effet de fondu et de déplacement */
 }
 
-/* Affichage de l'image au survol du lien */
+/* Affichage de l'image et animation lorsqu'on survole le lien */
 .menu-item:hover .image {
   opacity: 1; /* L'image devient visible */
   transform: translateX(0); /* Aucune translation quand l'image devient visible */
 }
 
-/* Comportement du lien lors du survol */
+/* Le comportement lorsque le lien est survolé */
 .menu-item:hover .menu-link {
-  color: #193324; /* Change la couleur du texte */
-  transform: scale(1.1); /* Agrandit légèrement le lien */
-  font-size: 18px; /* Augmente la taille du texte */
+  color: #193324; /* Change la couleur du lien au survol */
+  transform: scale(1.1); /* Agrandir légèrement le lien */
+  font-size: 18px; /* Réduire légèrement la taille du texte */
 }
 
-/* Texte qui apparaît entre le lien et l'image */
+/* Le texte qui apparaît entre le lien et l'image */
 .menu-item:hover .menu-link::after {
-  content: attr(data-text); /* Le texte est récupéré depuis l'attribut data-text */
-  font-size: 13px; 
+  content: attr(data-text); /* Afficher le texte défini dans l'attribut data-text */
+  font-size: 13px;
   color: #b8813c; /* Couleur du texte */
-  margin-left: 15px; /* Espace entre le lien et le texte */
-  margin-right: 10px; /* Espace entre le texte et l'image */
-  opacity: 1; /* Le texte devient visible au survol */
-  display: inline-block; /* L'aligne avec le lien */
-  transition: opacity 0.3s ease-in-out; /* Transition pour l'effet de fondu */
+  margin-left: 15px; /* Espacement entre le lien et le texte */
+  margin-right: 10px; /* Espacement entre le texte et l'image */
+  opacity: 1; /* Le texte devient visible */
+  display: inline-block; /* Pour qu'il soit aligné avec le lien */
+  transition: opacity 0.3s ease-in-out; /* Transition pour l'opacité */
 }
 
-/* Cacher le texte par défaut */
+/* Cacher le texte par défaut (avant le survol) */
 .menu-link::after {
   content: ""; /* Aucun texte par défaut */
-  opacity: 0; /* Texte invisible par défaut */
+  opacity: 0;
 }
+
 
 
 
 /* NOUVELLE PAGE DROP  */
-/* Style du chiffre 4 (avec animation) */
-.four {
-  font-size: 80px; /* Taille du chiffre 4 */
-  font-weight: bold;
-  color: white; /* Couleur du chiffre initiale (blanc) */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100px; /* Largeur du carré */
-  height: 100px; /* Hauteur du carré */
-  background-color: black; /* Fond noir pour le carré */
-  border-radius: 10px; /* Coins arrondis pour l'esthétique */
-  text-align: center;
-  animation: rotate-3d 5s infinite linear, color-change 5s infinite linear; /* Applique les animations de rotation et de changement de couleur */
-}
 
-/* Animation de rotation 3D du chiffre 4 */
-@keyframes rotate-3d {
-  0% {
-    transform: rotateY(0deg); /* Initialisation de la rotation à 0° */
-  }
-  50% {
-    transform: rotateY(180deg); /* Rotation à 180° pour inverser le chiffre */
-  }
-  100% {
-    transform: rotateY(360deg); /* Retour à la rotation complète (360°) */
-  }
-}
-
-/* Animation de changement de couleur entre blanc et orange */
-@keyframes color-change {
-  0% {
-    color: #193324; /* Couleur initiale (blanc) */
-  }
-  50% {
-    color: #b8813c; /* Couleur orange au milieu de la rotation */
-  }
-  100% {
-    color: #193324; /* Retour à la couleur initiale (blanc) */
-  }
-}
-
-/* Conteneur pour la mise en page des éléments */
-.container {
-  background-color: black; /* Fond noir pour l'ensemble du conteneur */
-  display: grid; /* Utilisation de la grille CSS */
-  grid-template-columns: 50% 50%; /* Deux colonnes égales : une pour les liens, l'autre pour les images */
-  height: 100vh; /* Hauteur de la fenêtre */
-  width: 100%; /* Largeur pleine */
-}
-
-/* Partie gauche (liens) */
-.grid-left {
-  display: flex;
-  flex-direction: column; /* Empilement vertical des liens */
-  gap: 20px; /* Espacement entre les liens */
-  padding: 20px; /* Padding autour des liens */
-  width: 100%;
+/* Container principal */
+.container2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Trois colonnes égales */
+  padding: 0px; /* Espacement autour de la grille (haut, bas, gauche, droite) */
   box-sizing: border-box;
-  position: relative; /* Permet de positionner les images à côté des liens */
-  margin-left: 120px; /* Décale les liens vers la droite */
-  background-color: black; /* Fond noir pour la colonne gauche */
+  height: 100vh; /* La hauteur du container prend 100% de la hauteur de la fenêtre */
+  width: 100%; /* La largeur du container prend 100% de la fenêtre */
+  background-color: rgb(186, 186, 186); /* Fond noir pour toute la page */
 }
 
-/* Partie droite (images associées) */
-.grid-right {
-  display: flex;
-  flex-direction: column; /* Empilement vertical des images */
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  overflow-y: auto; /* Permet le défilement vertical si nécessaire */
+/* Colonne 1 et 2 : Images (avec fond noir) */
+.images-large {
+  grid-column: span 2; /* L’image va s’étendre sur les deux premières colonnes */
+  background-color: rgb(186, 186, 186); /* Fond noir pour la colonne contenant les images */
+  display: flex; /* Flexbox pour aligner les images verticalement */
+  flex-direction: column; /* Les images s'affichent les unes sous les autres */
+  justify-content: flex-start; /* Les images sont en haut de la colonne */
+  height: 100%; /* S’assurer que la colonne occupe toute la hauteur disponible */
 }
 
-/* Chaque lien avec son image associée */
-.menu-item {
-  position: relative; /* Permet de placer l'image et le texte correctement */
-  display: flex;
-  align-items: center; /* Centre les éléments (texte + image) */
+/* Conteneur d'une image (avec fond noir et espacement) */
+.image-container2 {
+  background-color: rgb(186, 186, 186); /* Fond noir pour chaque image */
+  margin-bottom: 8px; /* Espacement entre les images */
+  padding: 20px; /* Espacement autour de l'image */
+  border-radius: none; /* Bord arrondi */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Légère ombre autour de l'image */
+  overflow: hidden; /* Si l'image dépasse le conteneur, elle sera masquée */
 }
 
-/* Liens dans le menu */
-.menu-link {
-  color: white; /* Texte blanc pour les liens */
-  text-decoration: none;
-  font-family: "PT Serif", serif; /* Police du texte */
-  font-weight: 500; /* Poids normal pour les liens */
-  font-size: 16px;
-  padding: 10px;
-  transition: 0.3s; /* Transition douce pour les effets */
-  border-bottom: 1px solid #b8813c; /* Ligne de séparation sous les liens */
-  position: relative; /* Pour permettre de positionner le texte et l'image par-dessus */
+/* Image dans le conteneur */
+.image-container2 img {
+  width: 100%; /* L’image prend toute la largeur disponible du conteneur */
+  height: auto; /* La hauteur s'ajuste automatiquement pour garder les proportions */
+  border-radius: none;
 }
 
-/* Effet au survol d'un lien */
-.menu-link:hover {
-  color: white; /* La couleur reste blanche */
-  transform: scale(1.1); /* Légère agrandissement au survol */
-  font-size: 18px; /* Augmentation de la taille du texte */
+/* Colonne droite : Header et informations */
+.right-column {
+  background-color: black; /* Fond clair pour le côté informations */
+  padding: 30px; /* Espacement à l'intérieur de la colonne droite */
+  border-radius: 10px;
+  height: 100%; /* Hauteur de la colonne égale à la hauteur de la fenêtre */
+  position: fixed; /* Fixe la colonne à droite de la page */
+  top: 0px; /* Fixe la colonne tout en haut */
+  right: 0; /* Positionne la colonne à droite */
+  width: 30%; /* Donne à la colonne une largeur de 30% de la page */
+  z-index: 10; /* Assure que la colonne reste au-dessus du contenu */
+}
+.right-column header {
+  text-align: center;
+  margin-bottom: 20px; /* Espacement sous le titre */
+  width: 100%; /* Pour s'assurer que le titre peut occuper toute la largeur */
+}
+/* Le titre (h1) dans la colonne droite */
+.right-column h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  color: #333; /* Couleur initiale */
+  transition: color 0.3s ease; /* Transition douce pour le changement de couleur */
+  position: relative; /* Nécessaire pour utiliser position:absolute sur l'élément de soulignement */
 }
 
-/* Image qui apparaît au survol du lien */
-.menu-item .image {
-  position: absolute; /* Positionnement absolu pour placer l'image précisément */
-  top: 0; /* Aligne l'image avec le haut du lien */
-  left: 100%; /* L'image se place juste après le lien */
-  margin-left: 10px; /* Un petit espacement entre le lien et l'image */
+/* Soulignement personnalisé */
+.right-column h1::after {
+  content: ''; 
+  position: absolute;
+  bottom: -10px; /* Espacement sous le texte, ajustable */
+  left: 0;
   width: 100%;
-  max-width: 400px; /* Limite la taille de l'image */
-  opacity: 0; /* L'image est cachée au départ */
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Transition douce pour l'effet de fondu et de déplacement */
+  height: 2px; /* Épaisseur du soulignement */
+  background-color:#193324 /* Couleur du soulignement (choisir la couleur que tu veux) */
 }
 
-/* Affichage de l'image au survol du lien */
-.menu-item:hover .image {
-  opacity: 1; /* L'image devient visible */
-  transform: translateX(0); /* Aucune translation quand l'image devient visible */
+/* Changer la couleur du titre lors du survol */
+.right-column h1:hover {
+  color: #ff6347; /* Couleur du titre lors du survol (tomato) */
 }
 
-/* Comportement du lien lors du survol */
-.menu-item:hover .menu-link {
-  color: #193324; /* Change la couleur du texte */
-  transform: scale(1.1); /* Agrandit légèrement le lien */
-  font-size: 18px; /* Augmente la taille du texte */
+.right-column h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 50px;
+  color: white;
 }
 
-/* Texte qui apparaît entre le lien et l'image */
-.menu-item:hover .menu-link::after {
-  content: attr(data-text); /* Le texte est récupéré depuis l'attribut data-text */
-  font-size: 13px; 
-  color: #b8813c; /* Couleur du texte */
-  margin-left: 15px; /* Espace entre le lien et le texte */
-  margin-right: 10px; /* Espace entre le texte et l'image */
-  opacity: 1; /* Le texte devient visible au survol */
-  display: inline-block; /* L'aligne avec le lien */
-  transition: opacity 0.3s ease-in-out; /* Transition pour l'effet de fondu */
+/* Contenu de la colonne d'informations */
+.right-column .info {
+  font-size: 15px; /* Taille du texte en rem pour plus de flexibilité */
+  font-family: "Playfair Display", serif;
+  line-height: 1.5; /* Espacement entre les lignes pour améliorer la lisibilité */
+  color: #666;
+  padding: 3px; /* Un peu d'espacement autour du texte */
 }
 
-/* Cacher le texte par défaut */
-.menu-link::after {
-  content: ""; /* Aucun texte par défaut */
-  opacity: 0; /* Texte invisible par défaut */
+/* Contenu de la colonne d'informations */
+.right-column .info1 {
+  font-size: 15px; /* Taille du texte en rem pour plus de flexibilité */
+  font-family: "Playfair Display", serif;
+  line-height: 1; /* Espacement entre les lignes pour améliorer la lisibilité */
+  color:#b8813c;
+  padding: 3px; /* Un peu d'espacement autour du texte */
 }
 
 
-/* NOUVELLE PAGE Parfum */
+/* NOUVELLE PAGE Parfum  */
 
 .container3 {
   display: grid;
@@ -761,6 +584,7 @@ section.about-me p {
 .images-large video {
   width: 100%;
   height: 30%;
+
   border-radius: 10px; /* Coins arrondis pour la vidéo */
 }
 
@@ -773,7 +597,14 @@ section.about-me p {
   flex-direction: column; /* Les images s'affichent les unes sous les autres */
   justify-content: flex-start; /* Les images sont en haut de la colonne */
   height: 100%; /* S’assurer que la colonne occupe toute la hauteur disponible */
+
 }
+
+
+
+
+
+
 
 /* Container principal */
 .container11 {
@@ -783,13 +614,13 @@ section.about-me p {
   box-sizing: border-box;
   height: 100vh; /* La hauteur du container prend 100% de la hauteur de la fenêtre */
   width: 100%; /* La largeur du container prend 100% de la fenêtre */
-  background-color: rgb(186, 186, 186); /* Fond gris pour toute la page */
+  background-color: rgb(186, 186, 186); /* Fond noir pour toute la page */
 }
 
-/* Colonne 1 et 2 : Images (avec fond gris) */
+/* Colonne 1 et 2 : Images (avec fond noir) */
 .images-autre {
   grid-column: span 2; /* L’image va s’étendre sur les deux premières colonnes */
-  background-color: rgb(186, 186, 186); /* Fond gris pour la colonne contenant les images */
+  background-color: rgb(186, 186, 186); /* Fond noir pour la colonne contenant les images */
   display: flex; /* Flexbox pour aligner les images horizontalement */
   flex-direction: row; /* Les images s'affichent côte à côte */
   justify-content: space-between; /* Met un espace égal entre les images */
@@ -797,12 +628,12 @@ section.about-me p {
   height: 100%; /* S’assurer que la colonne occupe toute la hauteur disponible */
 }
 
-/* Conteneur d'une image (avec fond gris et espacement) */
+/* Conteneur d'une image (avec fond noir et espacement) */
 .image-container11 {
-  background-color: rgb(186, 186, 186); /* Fond gris pour chaque image */
+  background-color: rgb(186, 186, 186); /* Fond noir pour chaque image */
   margin-right: 8px; /* Espacement à droite de chaque image */
   padding: 20px; /* Espacement autour de l'image */
-  border-radius: none; /* Pas de bord arrondi */
+  border-radius: none; /* Bord arrondi */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Légère ombre autour de l'image */
   overflow: hidden; /* Si l'image dépasse le conteneur, elle sera masquée */
   flex: 1; /* Permet à chaque image de s'ajuster à l'espace disponible */
@@ -817,7 +648,7 @@ section.about-me p {
 
 /* Colonne droite : Header et informations */
 .right-column {
-  background-color: black; /* Fond noir pour la colonne d'informations */
+  background-color: black; /* Fond clair pour le côté informations */
   padding: 30px; /* Espacement à l'intérieur de la colonne droite */
   border-radius: 10px;
   height: 100%; /* Hauteur de la colonne égale à la hauteur de la fenêtre */
@@ -850,7 +681,7 @@ section.about-me p {
   left: 0;
   width: 100%;
   height: 2px; /* Épaisseur du soulignement */
-  background-color: #193324; /* Couleur du soulignement (choisir la couleur que tu veux) */
+  background-color:#193324 /* Couleur du soulignement (choisir la couleur que tu veux) */
 }
 
 /* Changer la couleur du titre lors du survol */
@@ -873,38 +704,44 @@ section.about-me p {
   padding: 3px; /* Un peu d'espacement autour du texte */
 }
 
-/* Contenu de la colonne d'informations (version 1) */
+/* Contenu de la colonne d'informations */
 .right-column .info1 {
   font-size: 15px; /* Taille du texte en rem pour plus de flexibilité */
   font-family: "Playfair Display", serif;
   line-height: 1; /* Espacement entre les lignes pour améliorer la lisibilité */
-  color: #b8813c; /* Couleur dorée de la première version d'information */
+  color:#b8813c;
   padding: 3px; /* Un peu d'espacement autour du texte */
 }
 
-/* Conteneur pour les glyphes */
-.grid-glyphs {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 60px;
-  justify-items: center;
-  align-items: center;
-  padding: 50px;
-  margin-bottom: 200px;
-  max-width: 2000px;
-}
 
-/* Conteneur pour l'herbier (d'autres images ou éléments) */
-.grid-herbier {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 60px;
-  justify-items: center;
-  align-items: center;
-  padding: 50px;
-  margin-bottom: 200px;
-  max-width: 2000px;
-}
+
+
+
+
+
+.grid-glyphs{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 60px;
+    justify-items: center;
+    align-items:center;
+    padding: 50px;
+    margin-bottom:200px;
+    max-width: 2000px;
+    }
+
+
+
+.grid-herbier{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 60px;
+    justify-items: center;
+    align-items:center;
+    padding: 50px;
+    margin-bottom:200px;
+    max-width: 2000px;
+    }
 
 
 /* 
